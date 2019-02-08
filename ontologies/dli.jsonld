@@ -55,34 +55,9 @@
   "rdfs:seeAlso": "https://github.com/digitalliving/standards/",
   "defines": [
     {
-      "@id": "dli:Resource",
-      "@type": "dli:Class",
-      "subClassOf": "rdfs:Resource",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Digital Living Resource"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "The class of resources."
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
       "@id": "dli:Class",
-      "@type": [
-        "dli:Resource",
-        "rdfs:Class"
-      ],
-      "subClassOf": [
-        "dli:Resource",
-        "rdfs:Class"
-      ],
+      "@type": "rdfs:Class",
+      "subClassOf": "rdfs:Class",
       "rdfs:label": [
         {
           "@language": "en",
@@ -125,19 +100,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Animal"
-        },
-        {
           "@language": "fi",
           "@value": "Eläin"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Animal"
-        },
         {
           "@language": "fi",
           "@value": "Eläin"
@@ -152,19 +119,11 @@
       "subClassOf": "dli:Space",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Apartment"
-        },
-        {
           "@language": "fi",
           "@value": "Asuinhuoneisto"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Apartment"
-        },
         {
           "@language": "fi",
           "@value": "Asuinhuoneisto"
@@ -183,19 +142,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Apartment share"
-        },
-        {
           "@language": "fi",
           "@value": "Asunto-osuus"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Apartment share"
-        },
         {
           "@language": "fi",
           "@value": "Asunto osuus"
@@ -210,19 +161,11 @@
       "subClassOf": "dli:VirtualThing",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Application"
-        },
-        {
           "@language": "fi",
           "@value": "Applikaatio"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "A software application"
-        },
         {
           "@language": "fi",
           "@value": "Applikaatio"
@@ -240,19 +183,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Bank"
-        },
-        {
           "@language": "fi",
           "@value": "Pankki"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Bank"
-        },
         {
           "@language": "fi",
           "@value": "Pankki"
@@ -267,19 +202,11 @@
       "subClassOf": "dli:Identity",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Board"
-        },
-        {
           "@language": "fi",
           "@value": "Hallitus"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Board"
-        },
         {
           "@language": "fi",
           "@value": "Hallitus"
@@ -294,19 +221,11 @@
       "subClassOf": "dli:Construction",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Building"
-        },
-        {
           "@language": "fi",
           "@value": "Rakennus"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Building"
-        },
         {
           "@language": "fi",
           "@value": "Rakennus"
@@ -338,22 +257,13 @@
     {
       "@id": "dli:Collection",
       "@type": "dli:Class",
-      "subClassOf": "dli:Resource",
       "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Collection"
-        },
         {
           "@language": "fi",
           "@value": "Kokoelma"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "A collection of anything."
-        },
         {
           "@language": "fi",
           "@value": "Kokoelma mitä tahansa asioita."
@@ -368,19 +278,11 @@
       "subClassOf": "dli:VirtualThing",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Comment"
-        },
-        {
           "@language": "fi",
           "@value": "Kommentti"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "A comment given to an object"
-        },
         {
           "@language": "fi",
           "@value": "Kommentti"
@@ -398,19 +300,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Company"
-        },
-        {
           "@language": "fi",
           "@value": "Yhtiö"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Company"
-        },
         {
           "@language": "fi",
           "@value": "Yhtiö"
@@ -496,22 +390,13 @@
     {
       "@id": "dli:Fauna",
       "@type": "dli:Class",
-      "subClassOf": "dli:Resource",
       "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Fauna"
-        },
         {
           "@language": "fi",
           "@value": "Eläin"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Fauna"
-        },
         {
           "@language": "fi",
           "@value": "Eläin"
@@ -541,22 +426,13 @@
     {
       "@id": "dli:Flora",
       "@type": "dli:Class",
-      "subClassOf": "dli:Resource",
       "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Flora"
-        },
         {
           "@language": "fi",
           "@value": "Kasvi"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Flora"
-        },
         {
           "@language": "fi",
           "@value": "Kasvi"
@@ -568,22 +444,13 @@
     {
       "@id": "dli:Group",
       "@type": "dli:Class",
-      "subClassOf": "dli:Resource",
       "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Group"
-        },
         {
           "@language": "fi",
           "@value": "Ryhmä"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "A group"
-        },
         {
           "@language": "fi",
           "@value": "Ryhmä"
@@ -602,19 +469,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Housing company"
-        },
-        {
           "@language": "fi",
           "@value": "Taloyhtiö"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Housing company"
-        },
         {
           "@language": "fi",
           "@value": "Taloyhtiö"
@@ -626,22 +485,13 @@
     {
       "@id": "dli:Identity",
       "@type": "dli:Class",
-      "subClassOf": "dli:Resource",
       "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Identity"
-        },
         {
           "@language": "fi",
           "@value": "Identiteetti"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "A real world identity, can be anything, a car, a person"
-        },
         {
           "@language": "fi",
           "@value": "Identiteetti"
@@ -653,22 +503,13 @@
     {
       "@id": "dli:Link",
       "@type": "dli:Class",
-      "subClassOf": "dli:Resource",
       "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Link"
-        },
         {
           "@language": "fi",
           "@value": "Linkki"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "A link between identities, used to define a role for the from-identity to the to-identity"
-        },
         {
           "@language": "fi",
           "@value": "Linkki kahden identiteetin välillä, voidaan käyttää roolin määrittelemiseen lähtöidentiteetin ja pääteidentiteetin välillä"
@@ -687,19 +528,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Manager company"
-        },
-        {
           "@language": "fi",
           "@value": "Huoltoyhtiö"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Manager company"
-        },
         {
           "@language": "fi",
           "@value": "Huoltoyhtiö"
@@ -714,19 +547,11 @@
       "subClassOf": "dli:VirtualThing",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Message"
-        },
-        {
           "@language": "fi",
           "@value": "Viesti"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Message"
-        },
         {
           "@language": "fi",
           "@value": "Viesti"
@@ -741,19 +566,11 @@
       "subClassOf": "dli:VirtualThing",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Note"
-        },
-        {
           "@language": "fi",
           "@value": "Merkintä"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Note"
-        },
         {
           "@language": "fi",
           "@value": "Merkintä"
@@ -768,19 +585,11 @@
       "subClassOf": "dli:VirtualThing",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Notification"
-        },
-        {
           "@language": "fi",
           "@value": "Notifikaatio"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Notification"
-        },
         {
           "@language": "fi",
           "@value": "Notifikaatio"
@@ -811,22 +620,13 @@
     {
       "@id": "dli:Person",
       "@type": "dli:Class",
-      "subClassOf": "dli:Resource",
       "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Person"
-        },
         {
           "@language": "fi",
           "@value": "Henkilö"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "A natural person"
-        },
         {
           "@language": "fi",
           "@value": "Luonnollinen henkilö"
@@ -841,19 +641,11 @@
       "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Physical thing"
-        },
-        {
           "@language": "fi",
           "@value": "Fyysinen asia"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Something tangible that can be touched, felt, smelt, tasted."
-        },
         {
           "@language": "fi",
           "@value": "Fyysinen asia"
@@ -865,22 +657,13 @@
     {
       "@id": "dli:Project",
       "@type": "dli:Class",
-      "subClassOf": "dli:Resource",
       "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Project"
-        },
         {
           "@language": "fi",
           "@value": "Projekti"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "A project"
-        },
         {
           "@language": "fi",
           "@value": "Projekti"
@@ -895,19 +678,11 @@
       "subClassOf": "dli:Space",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Real Estate"
-        },
-        {
           "@language": "fi",
           "@value": "Kiinteistö"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Real Estate"
-        },
         {
           "@language": "fi",
           "@value": "Kiinteistö"
@@ -959,22 +734,13 @@
     {
       "@id": "dli:Role",
       "@type": "dli:Class",
-      "subClassOf": "dli:Resource",
       "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Role"
-        },
         {
           "@language": "fi",
           "@value": "Rooli"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Role"
-        },
         {
           "@language": "fi",
           "@value": "Rooli"
@@ -1011,19 +777,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Share series"
-        },
-        {
           "@language": "fi",
           "@value": "Osakesarja"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Share series"
-        },
         {
           "@language": "fi",
           "@value": "Osakesarja"
@@ -1053,22 +811,13 @@
     {
       "@id": "dli:Space",
       "@type": "dli:Class",
-      "subClassOf": "dli:Resource",
       "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Space"
-        },
         {
           "@language": "fi",
           "@value": "Tila"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "A space, any occupied or unoccupied area"
-        },
         {
           "@language": "fi",
           "@value": "Tila"
@@ -1098,22 +847,13 @@
     {
       "@id": "dli:Structure",
       "@type": "dli:Class",
-      "subClassOf": "dli:Resource",
       "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Structure"
-        },
         {
           "@language": "fi",
           "@value": "Rakenne"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Any kind of structure"
-        },
         {
           "@language": "fi",
           "@value": "Rakenne"
@@ -1165,19 +905,11 @@
       "subClassOf": "dli:VirtualThing",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Task"
-        },
-        {
           "@language": "fi",
           "@value": "Tehtävä"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Task"
-        },
         {
           "@language": "fi",
           "@value": "Tehtävä"
@@ -1189,22 +921,13 @@
     {
       "@id": "dli:Thing",
       "@type": "dli:Class",
-      "subClassOf": "dli:Resource",
       "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Thing"
-        },
         {
           "@language": "fi",
           "@value": "Asia"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Any inanimate things"
-        },
         {
           "@language": "fi",
           "@value": "Asia"
@@ -1216,22 +939,13 @@
     {
       "@id": "dli:Transaction",
       "@type": "dli:Class",
-      "subClassOf": "dli:Resource",
       "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Transaction"
-        },
         {
           "@language": "fi",
           "@value": "Transaktio"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Transaction"
-        },
         {
           "@language": "fi",
           "@value": "Transaktio"
@@ -1246,19 +960,11 @@
       "subClassOf": "dli:Person",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "User"
-        },
-        {
           "@language": "fi",
           "@value": "Käyttäjä"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "A user in a system"
-        },
         {
           "@language": "fi",
           "@value": "Järjestlmän käyttäjä"
@@ -1273,19 +979,11 @@
       "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Virtual thing"
-        },
-        {
           "@language": "fi",
           "@value": "Virtuaalinen asia"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Intangible things, that cannot be touched, felt, smelt, tasted."
-        },
         {
           "@language": "fi",
           "@value": "Virtuaalinen asia"
@@ -1303,19 +1001,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Accountant"
-        },
-        {
           "@language": "fi",
           "@value": "Kirjanpitäjä"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Accountant"
-        },
         {
           "@language": "fi",
           "@value": "Kirjanpitäjä"
@@ -1333,19 +1023,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Admin"
-        },
-        {
           "@language": "fi",
           "@value": "Administraattori"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Admin"
-        },
         {
           "@language": "fi",
           "@value": "Administraattori"
@@ -1382,19 +1064,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "CEO"
-        },
-        {
           "@language": "fi",
           "@value": "Toimitusjohtaja"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "CEO"
-        },
         {
           "@language": "fi",
           "@value": "Toimitusjohtaja"
@@ -1412,19 +1086,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "CFO"
-        },
-        {
           "@language": "fi",
           "@value": "Talousjohtaja"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "CFO"
-        },
         {
           "@language": "fi",
           "@value": "Talousjohtaja"
@@ -1442,19 +1108,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Chairman"
-        },
-        {
           "@language": "fi",
           "@value": "Puheenjohtaja"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Chairman"
-        },
         {
           "@language": "fi",
           "@value": "Puheenjohtaja"
@@ -1472,19 +1130,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Customer"
-        },
-        {
           "@language": "fi",
           "@value": "Asiakas"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Customer"
-        },
         {
           "@language": "fi",
           "@value": "Asiakas"
@@ -1502,19 +1152,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Employee"
-        },
-        {
           "@language": "fi",
           "@value": "Työntekijä"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Employee"
-        },
         {
           "@language": "fi",
           "@value": "Työntekijä"
@@ -1532,19 +1174,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Employer"
-        },
-        {
           "@language": "fi",
           "@value": "Työnantaja"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Employer"
-        },
         {
           "@language": "fi",
           "@value": "Työnantaja"
@@ -1562,19 +1196,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Follower"
-        },
-        {
           "@language": "fi",
           "@value": "Seuraaja"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Follower"
-        },
         {
           "@language": "fi",
           "@value": "Seuraaja"
@@ -1592,19 +1218,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Friend"
-        },
-        {
           "@language": "fi",
           "@value": "Ystävä"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Friend"
-        },
         {
           "@language": "fi",
           "@value": "Ystävä"
@@ -1622,19 +1240,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Holder"
-        },
-        {
           "@language": "fi",
           "@value": "Haltija"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Holder"
-        },
         {
           "@language": "fi",
           "@value": "Haltija"
@@ -1652,19 +1262,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Issuer"
-        },
-        {
           "@language": "fi",
           "@value": "Liikkeeseenlaskija"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Issuer"
-        },
         {
           "@language": "fi",
           "@value": "Liikkeeseenlaskija"
@@ -1705,19 +1307,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Manager"
-        },
-        {
           "@language": "fi",
           "@value": "Isännöitsijä"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "A link describing a manager"
-        },
         {
           "@language": "fi",
           "@value": "Isännöitsijä"
@@ -1735,19 +1329,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Member"
-        },
-        {
           "@language": "fi",
           "@value": "Jäsen"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Member"
-        },
         {
           "@language": "fi",
           "@value": "Jäsen"
@@ -1765,19 +1351,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Owner"
-        },
-        {
           "@language": "fi",
           "@value": "Omistaja"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "A link describing an owner"
-        },
         {
           "@language": "fi",
           "@value": "Omistaja"
@@ -1795,19 +1373,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Partial owner"
-        },
-        {
           "@language": "fi",
           "@value": "Osaomistaja"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Partial owner"
-        },
         {
           "@language": "fi",
           "@value": "Osaomistaja"
@@ -1825,19 +1395,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Restriction holder"
-        },
-        {
           "@language": "fi",
           "@value": "Rajoituksen haltija"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Restriction holder"
-        },
         {
           "@language": "fi",
           "@value": "Rajoituksen haltija"
@@ -1855,19 +1417,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Secretary"
-        },
-        {
           "@language": "fi",
           "@value": "Sihteeri"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Secretary"
-        },
         {
           "@language": "fi",
           "@value": "Sihteeri"
@@ -1885,19 +1439,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Service provider"
-        },
-        {
           "@language": "fi",
           "@value": "Palveluntarjoaja"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "A link describing a service provider"
-        },
         {
           "@language": "fi",
           "@value": "Palveluntarjoaja"
@@ -1915,19 +1461,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Shareholder"
-        },
-        {
           "@language": "fi",
           "@value": "Osakkeenomistaja"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "Shareholder"
-        },
         {
           "@language": "fi",
           "@value": "Osakkeenomistaja"
@@ -1945,19 +1483,11 @@
       ],
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Tenant"
-        },
-        {
           "@language": "fi",
           "@value": "Vuokralainen"
         }
       ],
       "rdfs:comment": [
-        {
-          "@language": "en",
-          "@value": "A link describing a tenant"
-        },
         {
           "@language": "fi",
           "@value": "Vuokralainen"
@@ -1967,6 +1497,589 @@
       "owl:versionInfo": "DRAFT"
     },
     {
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:name",
+      "@type": "dli:Attribute",
+      "subPropertyOf": "rdfs:label",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Name"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:attribute",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Attribute"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "An attribute"
+        }
+      ],
+      "range": "dli:Attribute",
+      "domain": "dli:SupportedAttribute",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:required",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Required"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "True if the attribute is required, false otherwise"
+        }
+      ],
+      "range": "xsd:boolean",
+      "domain": "dli:SupportedAttribute",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:title",
+      "@type": "dli:Attribute",
+      "subPropertyOf": "rdfs:label",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Title"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "A title, often used along with a description"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": "dli:SupportedAttribute",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:description",
+      "@type": "dli:Attribute",
+      "subPropertyOf": "rdfs:comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Description"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "A description"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:email",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Email"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "An email address"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": "dli:User",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:password",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Password"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "A password"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:role",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Role"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Defines a role, e.g. for a user in the system"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": "dli:User",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:firstName",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "First name"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "A person's first name"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": "dli:User",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:lastName",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Last name"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "A person's last name"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": "dli:User",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:data",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Data"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Data defines attributes for identities. All attributes except name is nested under the data object of an identity."
+        }
+      ],
+      "range": "xsd:object",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:externalIds",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "External IDs"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "An object containing external systems' IDs."
+        }
+      ],
+      "range": "xsd:object",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:usageType",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Usage type"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Defines the usage type of an identity."
+        }
+      ],
+      "range": "xsd:string",
+      "domain": [
+        "dli:Apartment",
+        "dli:Room",
+        "dli:Space"
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:createdAt",
+      "@type": "dli:Attribute",
+      "subClassOf": "dli:Rfc3339",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Created at"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "When the identity was created"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:updatedAt",
+      "@type": "dli:Attribute",
+      "subClassOf": "dli:Rfc3339",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Updated at"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "When the identity was updated"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:createdBy",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Created by"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The ID of the user who created the identity"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:updatedBy",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Updated by"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The ID of the user who updated the identity"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:toIdentity",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "To identity"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The \"to\"-identity, to which the class is tied to"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": [
+        "dli:CalendarEntry",
+        "dli:Event",
+        "dli:Task",
+        "dli:Message"
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:startDate",
+      "@type": "dli:Attribute",
+      "subClassOf": "dli:Rfc3339",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Start date"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "A start date"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": [
+        "dli:CalendarEntry",
+        "dli:Event",
+        "dli:Task"
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:endDate",
+      "@type": "dli:Attribute",
+      "subClassOf": "dli:Rfc3339",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "End date"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "An end date"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": [
+        "dli:CalendarEntry",
+        "dli:Event",
+        "dli:Task"
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:repeats",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Repeats"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Repeats, as defined by ISO 8601"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": [
+        "dli:CalendarEntry",
+        "dli:Event",
+        "dli:Task"
+      ],
+      "seeAlso": "https://en.wikipedia.org/wiki/ISO_8601",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:content",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Content"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Content, or body text"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": [
+        "dli:CalendarEntry",
+        "dli:Event",
+        "dli:Task",
+        "dli:Message"
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:location",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Location"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "A location"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": [
+        "dli:CalendarEntry",
+        "dli:Event",
+        "dli:Task"
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:cc",
+      "@type": "dli:Attribute",
+      "subClassOf": "dli:Collection",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "CC"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Courtesy copy"
+        }
+      ],
+      "range": "xsd:list",
+      "domain": "dli:Message",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:from",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "From identity"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The from-identity from where a link starts"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": "dli:Link",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:to",
+      "@type": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "To identity"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The to-identity to where a link ends"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": "dli:Link",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:inLinks",
+      "@type": "dli:Attribute",
+      "subClassOf": "dli:Collection",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "In links"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "A list of incoming links to the identity"
+        }
+      ],
+      "range": "xsd:list",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:outLinks",
+      "@type": "dli:Attribute",
+      "subClassOf": "dli:Collection",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Out links"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "A list of outgoing links from the identity"
+        }
+      ],
+      "range": "xsd:list",
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     }
