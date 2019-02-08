@@ -1,0 +1,1320 @@
+{
+  "@context": {
+    "dli": "https://digitalliving.github.io/standards/ontologies/dli.jsonld#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "vs": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "dct": "http://purl.org/dc/terms/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "cc": "http://creativecommons.org/ns#",
+    "vann": "http://purl.org/vocab/vann/",
+    "@vocab": "https://digitalliving.github.io/standards/ontologies/dli.jsonld#",
+    "@base": "https://digitalliving.github.io/standards/ontologies/dli.jsonld#",
+    "defines": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "cc:license": {
+      "@type": "@id"
+    },
+    "cc:attributionURL": {
+      "@type": "@id"
+    },
+    "domain": {
+      "@id": "rdfs:domain",
+      "@type": "@vocab"
+    },
+    "range": {
+      "@id": "rdfs:range",
+      "@type": "@vocab"
+    },
+    "subClassOf": {
+      "@id": "rdfs:subClassOf",
+      "@type": "@vocab"
+    },
+    "subPropertyOf": {
+      "@id": "rdfs:subPropertyOf",
+      "@type": "@vocab"
+    }
+  },
+  "@id": "https://digitalliving.github.io/standards/ontologies/dli.jsonld",
+  "@type": "owl:Ontology",
+  "dct:title": "Digital Living Core Ontology",
+  "dct:description": "The Digital Living Core Ontology is the base for all LifeEngine APIs.",
+  "rdfs:label": "Digital Living Core Ontology",
+  "rdfs:comment": "An ontology used in the Digital Living LifeEngine APIs.",
+  "dct:abstract": "The Digital Living ontology aims to provide a comprehensive set of classes and properties to describe real world entities.",
+  "vann:preferredNamespacePrefix": "dli",
+  "vann:preferredNamespaceUri": "https://digitalliving.github.io/standards/ontologies/dli.jsonld",
+  "dct:rights": "TODO",
+  "dct:publisher": "Digital Living International Oy",
+  "cc:license": "https://tldrlegal.com/license/mit-license",
+  "cc:attributionName": "Digital Living Core Ontology",
+  "cc:attributionURL": "http://www.lifeengine.io",
+  "rdfs:seeAlso": "https://github.com/digitalliving/standards/",
+  "defines": [
+    {
+      "@id": "dli:Resource",
+      "@type": "dli:Class",
+      "subClassOf": "rdfs:Resource",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Digital Living Resource"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Class",
+      "@type": [
+        "dli:Resource",
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "dli:Resource",
+        "rdfs:Class"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Digital Living Class"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Attribute",
+      "@type": "rdf:Property",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "PoT Attribute"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Animal",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Identity",
+        "dli:Fauna"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Animal"
+        },
+        {
+          "@language": "fi",
+          "@value": "Eläin"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Apartment",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Space",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Apartment"
+        },
+        {
+          "@language": "fi",
+          "@value": "Asuinhuoneisto"
+        }
+      ],
+      "owl:equivalentClass": "rak:Huoneisto",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:ApartmentShare",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Identity",
+        "dli:Thing"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Apartment share"
+        },
+        {
+          "@language": "fi",
+          "@value": "Asunto-osuus"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:App",
+      "@type": "dli:Class",
+      "subClassOf": "dli:VirtualThing",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Application"
+        },
+        {
+          "@language": "fi",
+          "@value": "Applikaatio"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Bank",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Identity",
+        "dli:Company"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Bank"
+        },
+        {
+          "@language": "fi",
+          "@value": "Pankki"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Board",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Identity",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Board"
+        },
+        {
+          "@language": "fi",
+          "@value": "Hallitus"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Building",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Construction",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Building"
+        },
+        {
+          "@language": "fi",
+          "@value": "Rakennus"
+        }
+      ],
+      "owl:equivalentClass": "rak:Rakennus",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:CalendarEntry",
+      "@type": "dli:Class",
+      "subClassOf": "dli:VirtualThing",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Calendar entry"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Collection",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Resource",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Collection"
+        },
+        {
+          "@language": "fi",
+          "@value": "Kokoelma"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Comment",
+      "@type": "dli:Class",
+      "subClassOf": "dli:VirtualThing",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Comment"
+        },
+        {
+          "@language": "fi",
+          "@value": "Kommentti"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Company",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Identity",
+        "dli:Group"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Company"
+        },
+        {
+          "@language": "fi",
+          "@value": "Yhtiö"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Construction",
+      "@type": "dli:Class",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Construction"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Contract",
+      "@type": "dli:Class",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Contract"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Device",
+      "@type": "dli:Class",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Device"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Event",
+      "@type": "dli:Class",
+      "subClassOf": "dli:VirtualThing",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Event"
+        }
+      ],
+      "owl:sameAs": "schema:Event",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Fauna",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Resource",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Fauna"
+        },
+        {
+          "@language": "fi",
+          "@value": "Eläin"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Floor",
+      "@type": "dli:Class",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Floor"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Flora",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Resource",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Flora"
+        },
+        {
+          "@language": "fi",
+          "@value": "Kasvi"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Group",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Resource",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Group"
+        },
+        {
+          "@language": "fi",
+          "@value": "Ryhmä"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:HousingCompany",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Identity",
+        "dli:Company",
+        "dli:Group"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Housing company"
+        },
+        {
+          "@language": "fi",
+          "@value": "Taloyhtiö"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Identity",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Resource",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Identity"
+        },
+        {
+          "@language": "fi",
+          "@value": "Identiteetti"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Link",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Resource",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Link"
+        },
+        {
+          "@language": "fi",
+          "@value": "Linkki"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:ManagerCompany",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Identity",
+        "dli:Company",
+        "dli:Group"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Manager company"
+        },
+        {
+          "@language": "fi",
+          "@value": "Huoltoyhtiö"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Message",
+      "@type": "dli:Class",
+      "subClassOf": "dli:VirtualThing",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Message"
+        },
+        {
+          "@language": "fi",
+          "@value": "Viesti"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Note",
+      "@type": "dli:Class",
+      "subClassOf": "dli:VirtualThing",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Note"
+        },
+        {
+          "@language": "fi",
+          "@value": "Merkintä"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Notification",
+      "@type": "dli:Class",
+      "subClassOf": "dli:VirtualThing",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Notification"
+        },
+        {
+          "@language": "fi",
+          "@value": "Notifikaatio"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Organization",
+      "@type": "dli:Class",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Organization"
+        }
+      ],
+      "owl:sameAs": "schema:Organization",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Person",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Resource",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Person"
+        },
+        {
+          "@language": "fi",
+          "@value": "Henkilö"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:PhysicalThing",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Physical thing"
+        },
+        {
+          "@language": "fi",
+          "@value": "Fyysinen asia"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Project",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Resource",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Project"
+        },
+        {
+          "@language": "fi",
+          "@value": "Projekti"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:RealEstate",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Space",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Real Estate"
+        },
+        {
+          "@language": "fi",
+          "@value": "Kiinteistö"
+        }
+      ],
+      "owl:equivalentClass": "rak:Kiinteistö",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Reservation",
+      "@type": "dli:Class",
+      "subClassOf": "dli:VirtualThing",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Reservation"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Rfc3339",
+      "@type": "rdfs:Datatype",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "RFC3339 datetime"
+        }
+      ],
+      "range": "xsd:string",
+      "seeAlso": "https://tools.ietf.org/html/rfc3339",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Role",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Resource",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Role"
+        },
+        {
+          "@language": "fi",
+          "@value": "Rooli"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Room",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Space",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Room"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:ShareSeries",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Identity",
+        "dli:Thing"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Share series"
+        },
+        {
+          "@language": "fi",
+          "@value": "Osakesarja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Site",
+      "@type": "dli:Class",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Site"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Space",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Resource",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Space"
+        },
+        {
+          "@language": "fi",
+          "@value": "Tila"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Spot",
+      "@type": "dli:Class",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Spot"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Structure",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Resource",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Structure"
+        },
+        {
+          "@language": "fi",
+          "@value": "Rakenne"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:SupportedAttribute",
+      "@type": "dli:Class",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Supported attribute"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:supportedAttribute",
+      "@type": "dli:Attribute",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Supported attributes"
+        }
+      ],
+      "range": "dli:SupportedAttribute",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Task",
+      "@type": "dli:Class",
+      "subClassOf": "dli:VirtualThing",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Task"
+        },
+        {
+          "@language": "fi",
+          "@value": "Tehtävä"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Thing",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Resource",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Thing"
+        },
+        {
+          "@language": "fi",
+          "@value": "Asia"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Transaction",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Resource",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Transaction"
+        },
+        {
+          "@language": "fi",
+          "@value": "Transaktio"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:User",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Person",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "User"
+        },
+        {
+          "@language": "fi",
+          "@value": "Käyttäjä"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:VirtualThing",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Virtual thing"
+        },
+        {
+          "@language": "fi",
+          "@value": "Virtuaalinen asia"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Accountant",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Accountant"
+        },
+        {
+          "@language": "fi",
+          "@value": "Kirjanpitäjä"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Admin",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Admin"
+        },
+        {
+          "@language": "fi",
+          "@value": "Administraattori"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Authorized",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Link",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Authorized"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:CEO",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "CEO"
+        },
+        {
+          "@language": "fi",
+          "@value": "Toimitusjohtaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:CFO",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "CFO"
+        },
+        {
+          "@language": "fi",
+          "@value": "Talousjohtaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Chairman",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Chairman"
+        },
+        {
+          "@language": "fi",
+          "@value": "Puheenjohtaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Customer",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Customer"
+        },
+        {
+          "@language": "fi",
+          "@value": "Asiakas"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Employee",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Employee"
+        },
+        {
+          "@language": "fi",
+          "@value": "Työntekijä"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Employer",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Employer"
+        },
+        {
+          "@language": "fi",
+          "@value": "Työnantaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Follower",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Follower"
+        },
+        {
+          "@language": "fi",
+          "@value": "Seuraaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Friend",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Friend"
+        },
+        {
+          "@language": "fi",
+          "@value": "Ystävä"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Holder",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Holder"
+        },
+        {
+          "@language": "fi",
+          "@value": "Haltija"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Issuer",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Issuer"
+        },
+        {
+          "@language": "fi",
+          "@value": "Liikkeeseenlaskija"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:MaintenanceProfessional",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Link",
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Maintenance Professional"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Manager",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Manager"
+        },
+        {
+          "@language": "fi",
+          "@value": "Isännöitsijä"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Member",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Member"
+        },
+        {
+          "@language": "fi",
+          "@value": "Jäsen"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Owner",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Owner"
+        },
+        {
+          "@language": "fi",
+          "@value": "Omistaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:PartialOwner",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Partial owner"
+        },
+        {
+          "@language": "fi",
+          "@value": "Osaomistaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:RestrictionHolder",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Restriction holder"
+        },
+        {
+          "@language": "fi",
+          "@value": "Rajoituksen haltija"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Secretary",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Secretary"
+        },
+        {
+          "@language": "fi",
+          "@value": "Sihteeri"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:ServiceProvider",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Service provider"
+        },
+        {
+          "@language": "fi",
+          "@value": "Palveluntarjoaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Shareholder",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Shareholder"
+        },
+        {
+          "@language": "fi",
+          "@value": "Osakkeenomistaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Tenant",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Tenant"
+        },
+        {
+          "@language": "fi",
+          "@value": "Vuokralainen"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    }
+  ]
+}
