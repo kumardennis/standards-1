@@ -55,95 +55,44 @@
   "rdfs:seeAlso": "https://github.com/digitalliving/standards/",
   "defines": [
     {
-      "@id": "dli:Class",
-      "@type": "rdfs:Class",
-      "subClassOf": "rdfs:Class",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Digital Living Class"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Digital Living perusluokka."
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Attribute",
-      "@type": "rdf:Property",
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "DLI Attribuutti"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Digital Living attribuutti"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Animal",
+      "@id": "dli:Accountant",
       "@type": "dli:Class",
-      "subClassOf": "dli:Fauna",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Eläin"
+          "@value": "Kirjanpitäjä"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Eläin"
+          "@value": "Kirjanpitäjä"
         }
       ],
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:Apartment",
+      "@id": "dli:Admin",
       "@type": "dli:Class",
-      "subClassOf": "dli:Space",
+      "subClassOf": [
+        "dli:Link",
+        "dli:Role"
+      ],
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Asuinhuoneisto"
+          "@value": "Administraattori"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Asuinhuoneisto"
-        }
-      ],
-      "owl:equivalentClass": "rak:Huoneisto",
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:ApartmentShare",
-      "@type": "dli:Class",
-      "subClassOf": "dli:Thing",
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Asunto-osuus"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Asunto osuus"
+          "@value": "Järjestelmän ylläpitäjä"
         }
       ],
       "vs:term_status": "unstable",
@@ -169,59 +118,39 @@
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:Bank",
-      "@type": "dli:Class",
-      "subClassOf": "dli:Company",
+      "@id": "dli:Attribute",
+      "@type": "rdf:Property",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Pankki"
+          "@value": "DLI Attribuutti"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Pankki"
+          "@value": "Digital Living attribuutti"
         }
       ],
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:Board",
+      "@id": "dli:Authorized",
       "@type": "dli:Class",
+      "subClassOf": "dli:Link",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Hallitus"
+          "@value": "Autorisoitu"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Hallitus"
+          "@value": "Linkki joka määrittelee jos käyttäjä on antanut applikaatiolle luvan tietoihinsa."
         }
       ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Building",
-      "@type": "dli:Class",
-      "subClassOf": "dli:Construction",
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Rakennus"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Rakennus"
-        }
-      ],
-      "owl:equivalentClass": "rak:Rakennus",
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
@@ -245,8 +174,85 @@
       "owl:versionInfo": "DRAFT"
     },
     {
+      "@id": "dli:CEO",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Toimitusjohtaja"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Toimitusjohtaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:CFO",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Talousjohtaja"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Talousjohtaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Chairman",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Puheenjohtaja"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Puheenjohtaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Class",
+      "@type": "rdfs:Class",
+      "subClassOf": "rdfs:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Digital Living Class"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Digital Living perusluokka."
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
       "@id": "dli:Collection",
       "@type": "dli:Class",
+      "subClassOf": "dli:VirtualThing",
       "rdfs:label": [
         {
           "@language": "fi",
@@ -282,27 +288,9 @@
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:Company",
-      "@type": "dli:Class",
-      "subClassOf": "dli:Group",
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Yhtiö"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Yhtiö"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
       "@id": "dli:Construction",
       "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
           "@language": "en",
@@ -321,6 +309,7 @@
     {
       "@id": "dli:Contract",
       "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
           "@language": "en",
@@ -337,8 +326,28 @@
       "owl:versionInfo": "DRAFT"
     },
     {
+      "@id": "dli:Customer",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Asiakas"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Asiakas"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
       "@id": "dli:DataProduct",
       "@type": "dli:Class",
+      "subClassOf": "dli:Product",
       "rdfs:label": [
         {
           "@language": "fi",
@@ -355,18 +364,38 @@
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:Device",
+      "@id": "dli:Employee",
       "@type": "dli:Class",
+      "subClassOf": "dli:Role",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Device"
+          "@language": "fi",
+          "@value": "Työntekijä"
         }
       ],
       "rdfs:comment": [
         {
-          "@language": "en",
-          "@value": "A device"
+          "@language": "fi",
+          "@value": "Työntekijä"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Employer",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Työnantaja"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Työnantaja"
         }
       ],
       "vs:term_status": "unstable",
@@ -395,6 +424,7 @@
     {
       "@id": "dli:Fauna",
       "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
           "@language": "fi",
@@ -413,6 +443,7 @@
     {
       "@id": "dli:Floor",
       "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
           "@language": "en",
@@ -431,6 +462,7 @@
     {
       "@id": "dli:Flora",
       "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
           "@language": "fi",
@@ -441,6 +473,44 @@
         {
           "@language": "fi",
           "@value": "Kasvi"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Follower",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Seuraaja"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Seuraaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Friend",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Ystävä"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Ystävä"
         }
       ],
       "vs:term_status": "unstable",
@@ -449,6 +519,7 @@
     {
       "@id": "dli:Group",
       "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
           "@language": "fi",
@@ -465,22 +536,19 @@
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:HousingCompany",
+      "@id": "dli:Holder",
       "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Company",
-        "dli:Group"
-      ],
+      "subClassOf": "dli:Role",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Taloyhtiö"
+          "@value": "Haltija"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Taloyhtiö"
+          "@value": "Haltija"
         }
       ],
       "vs:term_status": "unstable",
@@ -489,6 +557,7 @@
     {
       "@id": "dli:Identity",
       "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
           "@language": "fi",
@@ -505,8 +574,28 @@
       "owl:versionInfo": "DRAFT"
     },
     {
+      "@id": "dli:Issuer",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Liikkeeseenlaskija"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Liikkeeseenlaskija"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
       "@id": "dli:Link",
       "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
           "@language": "fi",
@@ -516,29 +605,64 @@
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Linkki kahden identiteetin välillä, voidaan käyttää roolin määrittelemiseen lähtöidentiteetin ja pääteidentiteetin välillä"
+          "@value": "Geneerinen linkki kahden identiteetin välillä"
         }
       ],
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:ManagerCompany",
+      "@id": "dli:MaintenanceProfessional",
       "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Company",
-        "dli:Group"
-      ],
+      "subClassOf": "dli:Link",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Huoltoyhtiö"
+          "@value": "Huoltoalan ammattilainen"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Huoltoyhtiö"
+          "@value": "Linkki joka kuvaa huoltoalan ammattilaista"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Manager",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Isännöitsijä"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Isännöitsijä"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Member",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Jäsen"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Jäsen"
         }
       ],
       "vs:term_status": "unstable",
@@ -604,6 +728,7 @@
     {
       "@id": "dli:Organization",
       "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
           "@language": "fi",
@@ -621,8 +746,47 @@
       "owl:versionInfo": "DRAFT"
     },
     {
+      "@id": "dli:Owner",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Omistaja"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Omistaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:PartialOwner",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Osaomistaja"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Osaomistaja"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
       "@id": "dli:Person",
       "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
           "@language": "fi",
@@ -671,6 +835,28 @@
         {
           "@language": "fi",
           "@value": "Palvelualusta"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Product",
+      "@type": "dli:Class",
+      "subClassOf": [
+        "dli:Thing",
+        "dli:VirtualThing"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Tuote"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Tuote"
         }
       ],
       "vs:term_status": "unstable",
@@ -735,6 +921,25 @@
       "owl:versionInfo": "DRAFT"
     },
     {
+      "@id": "dli:RestrictionHolder",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Rajoituksen haltija"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Rajoituksen haltija"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
       "@id": "dli:Rfc3339",
       "@type": "rdfs:Datatype",
       "rdfs:label": [
@@ -757,6 +962,7 @@
     {
       "@id": "dli:Role",
       "@type": "dli:Class",
+      "subClassOf": "dli:Link",
       "rdfs:label": [
         {
           "@language": "fi",
@@ -773,56 +979,57 @@
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:Room",
+      "@id": "dli:Secretary",
       "@type": "dli:Class",
-      "subClassOf": "dli:Space",
+      "subClassOf": "dli:Role",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Huone"
+          "@value": "Sihteeri"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Huone"
+          "@value": "Sihteeri"
         }
       ],
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:ShareSeries",
+      "@id": "dli:ServiceProvider",
       "@type": "dli:Class",
-      "subClassOf": "dli:Thing",
+      "subClassOf": "dli:Role",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Osakesarja"
+          "@value": "Palveluntarjoaja"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Osakesarja"
+          "@value": "Palveluntarjoaja"
         }
       ],
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:Site",
+      "@id": "dli:Shareholder",
       "@type": "dli:Class",
+      "subClassOf": "dli:Role",
       "rdfs:label": [
         {
-          "@language": "en",
-          "@value": "Site"
+          "@language": "fi",
+          "@value": "Osakkeenomistaja"
         }
       ],
       "rdfs:comment": [
         {
-          "@language": "en",
-          "@value": "A site"
+          "@language": "fi",
+          "@value": "Osakkeenomistaja"
         }
       ],
       "vs:term_status": "unstable",
@@ -831,6 +1038,7 @@
     {
       "@id": "dli:Space",
       "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
           "@language": "fi",
@@ -849,6 +1057,7 @@
     {
       "@id": "dli:Spot",
       "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
           "@language": "fi",
@@ -867,6 +1076,7 @@
     {
       "@id": "dli:Structure",
       "@type": "dli:Class",
+      "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
           "@language": "fi",
@@ -901,21 +1111,38 @@
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:supportedAttribute",
-      "@type": "dli:Attribute",
+      "@id": "dli:SupportedClass",
+      "@type": "dli:Class",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Tuetut attribuutit"
+          "@value": "Tuettu luokka"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Attribuutit jotka tiedetään liittyvän identiteettiin"
+          "@value": "Luokka jonka tiedetään kuuluvan identiteettiin"
         }
       ],
-      "range": "dli:SupportedAttribute",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:SupportedType",
+      "@type": "dli:Class",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Tuettu tyyppi"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Tyyppi jonka tiedetään kuuluvan identiteettiin"
+        }
+      ],
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
@@ -933,6 +1160,25 @@
         {
           "@language": "fi",
           "@value": "Tehtävä"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:Tenant",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Vuokralainen"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Vuokralainen"
         }
       ],
       "vs:term_status": "unstable",
@@ -960,7 +1206,7 @@
     {
       "@id": "dli:Transaction",
       "@type": "dli:Class",
-      "subClassOf": "owl:Thing",
+      "subClassOf": "dli:Thing",
       "rdfs:label": [
         {
           "@language": "fi",
@@ -996,6 +1242,25 @@
       "owl:versionInfo": "DRAFT"
     },
     {
+      "@id": "dli:Uses",
+      "@type": "dli:Class",
+      "subClassOf": "dli:Role",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Käyttää"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Linkki joka määrittelee käytön"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
       "@id": "dli:VirtualThing",
       "@type": "dli:Class",
       "subClassOf": "dli:Thing",
@@ -1015,548 +1280,37 @@
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:Accountant",
+      "@id": "dli:Vocabulary",
       "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Kirjanpitäjä"
+          "@value": "Sanasto"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Kirjanpitäjä"
+          "@value": "Sanasto määrittelee tuetut luokat, tuetut attribuutit sekä tuetut tyypit luokille. Sanasto myös kuvaa pakollisia kenttiä, sekä kaiken mitä tarvitaan ohjelmallisesti identiteettien hallintaan."
         }
       ],
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:Admin",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Administraattori"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Järjestelmän ylläpitäjä"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Authorized",
-      "@type": "dli:Class",
-      "subClassOf": "dli:Link",
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Autorisoitu"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Linkki joka määrittelee jos käyttäjä on antanut applikaatiolle luvan tietoihinsa."
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:CEO",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Toimitusjohtaja"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Toimitusjohtaja"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:CFO",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Talousjohtaja"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Talousjohtaja"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Chairman",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Puheenjohtaja"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Puheenjohtaja"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Customer",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Asiakas"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Asiakas"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Employee",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Työntekijä"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Työntekijä"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Employer",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Työnantaja"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Työnantaja"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Follower",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Seuraaja"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Seuraaja"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Friend",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Ystävä"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Ystävä"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Holder",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Haltija"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Haltija"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Issuer",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Liikkeeseenlaskija"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Liikkeeseenlaskija"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:MaintenanceProfessional",
-      "@type": "dli:Class",
-      "subClassOf": "dli:Link",
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Huoltoalan ammattilainen"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Linkki joka kuvaa huoltoalan ammattilaista"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Manager",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Isännöitsijä"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Isännöitsijä"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Member",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Jäsen"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Jäsen"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Owner",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Omistaja"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Omistaja"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:PartialOwner",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Osaomistaja"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Osaomistaja"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:RestrictionHolder",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Rajoituksen haltija"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Rajoituksen haltija"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Secretary",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Sihteeri"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Sihteeri"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:ServiceProvider",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Palveluntarjoaja"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Palveluntarjoaja"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Shareholder",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Osakkeenomistaja"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Osakkeenomistaja"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Tenant",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Vuokralainen"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Vuokralainen"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:Uses",
-      "@type": "dli:Class",
-      "subClassOf": [
-        "dli:Link",
-        "dli:Role"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Käyttää"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Linkki joka määrittelee käytön"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:name",
+      "@id": "dli:accessToken",
       "@type": "rdf:Property",
-      "subPropertyOf": [
-        "rdfs:label",
-        "dli:Attribute"
-      ],
+      "subPropertyOf": "dli:Attribute",
       "rdfs:label": [
         {
-          "@language": "fi",
-          "@value": "Nimi"
+          "@language": "en",
+          "@value": "Access token"
         }
       ],
       "rdfs:comment": [
         {
-          "@language": "fi",
-          "@value": "Identiteetin nimi"
+          "@language": "en",
+          "@value": "The access token used in OAuth flow"
         }
       ],
       "range": "xsd:string",
@@ -1579,53 +1333,238 @@
           "@value": "Attribuutti"
         }
       ],
-      "range": "dli:Attribute",
+      "range": "xsd:string",
       "domain": "dli:SupportedAttribute",
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:required",
+      "@id": "dli:cc",
+      "@type": "rdf:Property",
+      "subPropertyOf": [
+        "dli:Attribute",
+        "dli:Collection"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "CC"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Kopio"
+        }
+      ],
+      "range": "xsd:list",
+      "domain": "dli:Message",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:clientId",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Client ID"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Client id used in OAuth flow"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:clientSecret",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Client secret"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Client secret used in OAuth flow"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:code",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Code"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Authorization code used in OAuth flow"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:content",
       "@type": "rdf:Property",
       "subPropertyOf": "dli:Attribute",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Pakollinen"
+          "@value": "Sisältö"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Määrittelee kentän pakollisuuden, tosi, jos kenttä on pakollinen."
+          "@value": "Sisältö, vapaa teksti"
         }
       ],
-      "range": "xsd:boolean",
-      "domain": "dli:SupportedAttribute",
+      "range": "xsd:string",
+      "domain": [
+        "dli:CalendarEntry",
+        "dli:Event",
+        "dli:Task",
+        "dli:Message"
+      ],
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:title",
+      "@id": "dli:createdAt",
       "@type": "rdf:Property",
-      "subPropertyOf": [
-        "rdfs:label",
-        "dli:Attribute"
-      ],
+      "subPropertyOf": "dli:Attribute",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Otsikko"
+          "@value": "Luotu"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Otsikko"
+          "@value": "Päivämäärä jolloin identiteetti on luotu"
+        }
+      ],
+      "range": "dli:Rfc3339",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:createdBy",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Loi"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Käyttäjän ID joka loi identiteetin"
         }
       ],
       "range": "xsd:string",
-      "domain": "dli:SupportedAttribute",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:data",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Data"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Data sisältää identiteetin attribuutit"
+        }
+      ],
+      "range": "xsd:object",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:defaultRedirectUri",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Default redirect URI"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The default redirect URI used in OAuth flow"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:defaultScopes",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Default scopes"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Comma-separated list of default scopes used in OAuth flow"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:defaultValue",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Oletusarvo"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Attribuutin oletusarvo"
+        }
+      ],
+      "range": "xsd:string",
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
@@ -1674,44 +1613,67 @@
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:password",
+      "@id": "dli:endDate",
       "@type": "rdf:Property",
       "subPropertyOf": "dli:Attribute",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Salasana"
+          "@value": "Päättymispäivämäärä"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Salasana"
+          "@value": "Päättymispäivämäärä"
         }
       ],
-      "range": "xsd:string",
-      "domain": "dli:User",
+      "range": "dli:Rfc3339",
+      "domain": [
+        "dli:CalendarEntry",
+        "dli:Event",
+        "dli:Task"
+      ],
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:role",
+      "@id": "dli:expiresAt",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Expires at"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "When a token or code expires"
+        }
+      ],
+      "range": "dli:Rfc3339",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:externalIds",
       "@type": "rdf:Property",
       "subPropertyOf": "dli:Attribute",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Rooli"
+          "@value": "Ulkoiset ID:t"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Määrittelee roolin, joka käyttäjällä on järjestelmässä"
+          "@value": "Ulkoisten järjestelmien ID:tä"
         }
       ],
-      "range": "xsd:string",
-      "domain": "dli:User",
+      "range": "xsd:object",
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
@@ -1737,6 +1699,90 @@
       "owl:versionInfo": "DRAFT"
     },
     {
+      "@id": "dli:from",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Lähtöidentiteetti"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Identiteetti josta linkki lähtee"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": "dli:Link",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:grantType",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Grant type"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Grant type used in OAuth flow"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:iconUrl",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Icon URL"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "A URL to an icon"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:inLinks",
+      "@type": "rdf:Property",
+      "subPropertyOf": [
+        "dli:Attribute",
+        "dli:Collection"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Sisääntulevat linkit"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Lista sisääntulevista linkeistä toisesta identiteetistä"
+        }
+      ],
+      "range": "xsd:list",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
       "@id": "dli:lastName",
       "@type": "rdf:Property",
       "subPropertyOf": "dli:Attribute",
@@ -1758,193 +1804,22 @@
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:data",
+      "@id": "dli:location",
       "@type": "rdf:Property",
       "subPropertyOf": "dli:Attribute",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Data"
+          "@value": "Lokaatio"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Data sisältää identiteetin attribuutit"
-        }
-      ],
-      "range": "xsd:object",
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:externalIds",
-      "@type": "rdf:Property",
-      "subPropertyOf": "dli:Attribute",
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Ulkoiset ID:t"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Ulkoisten järjestelmien ID:tä"
-        }
-      ],
-      "range": "xsd:object",
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:usageType",
-      "@type": "rdf:Property",
-      "subPropertyOf": "dli:Attribute",
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Käyttötarkoitus"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Määrittelee käyttötarkoituksen"
+          "@value": "Lokaatio - paikka jossa jokin tapahtuu"
         }
       ],
       "range": "xsd:string",
-      "domain": [
-        "dli:Apartment",
-        "dli:Room",
-        "dli:Space"
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:createdAt",
-      "@type": "rdf:Property",
-      "subPropertyOf": "dli:Attribute",
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Luotu"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Päivämäärä jolloin identiteetti on luotu"
-        }
-      ],
-      "range": "dli:Rfc3339",
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:updatedAt",
-      "@type": "rdf:Property",
-      "subPropertyOf": "dli:Attribute",
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Päivitetty"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Päivämäärä jolloin identiteetti on päivitetty"
-        }
-      ],
-      "range": "dli:Rfc3339",
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:createdBy",
-      "@type": "rdf:Property",
-      "subPropertyOf": "dli:Attribute",
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Loi"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Käyttäjän ID joka loi identiteetin"
-        }
-      ],
-      "range": "xsd:string",
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:updatedBy",
-      "@type": "rdf:Property",
-      "subPropertyOf": "dli:Attribute",
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Päivitti"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Käyttäjän ID joka päivitti identiteetin"
-        }
-      ],
-      "range": "xsd:string",
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:toIdentity",
-      "@type": "rdf:Property",
-      "subPropertyOf": "dli:Attribute",
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Pääteidentiteetti"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Identiteetti johon luokka on kiinnitetty"
-        }
-      ],
-      "range": "xsd:string",
-      "domain": [
-        "dli:CalendarEntry",
-        "dli:Event",
-        "dli:Task",
-        "dli:Message"
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT"
-    },
-    {
-      "@id": "dli:startDate",
-      "@type": "rdf:Property",
-      "subPropertyOf": "dli:Attribute",
-      "rdfs:label": [
-        {
-          "@language": "fi",
-          "@value": "Alkupäivämäärä"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi",
-          "@value": "Alkupäivämäärä"
-        }
-      ],
-      "range": "dli:Rfc3339",
       "domain": [
         "dli:CalendarEntry",
         "dli:Event",
@@ -1954,27 +1829,149 @@
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:endDate",
+      "@id": "dli:name",
       "@type": "rdf:Property",
-      "subPropertyOf": "dli:Attribute",
+      "subPropertyOf": [
+        "rdfs:label",
+        "dli:Attribute"
+      ],
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Päättymispäivämäärä"
+          "@value": "Nimi"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Päättymispäivämäärä"
+          "@value": "Identiteetin nimi"
         }
       ],
-      "range": "dli:Rfc3339",
-      "domain": [
-        "dli:CalendarEntry",
-        "dli:Event",
-        "dli:Task"
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:outLinks",
+      "@type": "rdf:Property",
+      "subPropertyOf": [
+        "dli:Attribute",
+        "dli:Collection"
       ],
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Uloslähtevät linkit"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Lista ulos lähtevistä linkeistä toiseen identiteettiin"
+        }
+      ],
+      "range": "xsd:list",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:password",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Salasana"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Salasana"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": "dli:User",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:platform",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Platform"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The linked platform"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:privacyPolicyUrl",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Privacy policy URL"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "A URL to a privacy policy"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:redirectUris",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Redirect URIs"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Comma-separated list of redirect URIs used in OAuth flow"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:refreshToken",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Refresh token"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "The refresh token used in OAuth flow"
+        }
+      ],
+      "range": "xsd:string",
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
@@ -2005,48 +2002,104 @@
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:content",
+      "@id": "dli:required",
       "@type": "rdf:Property",
       "subPropertyOf": "dli:Attribute",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Sisältö"
+          "@value": "Pakollinen"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Sisältö, vapaa teksti"
+          "@value": "Määrittelee kentän pakollisuuden, tosi, jos kenttä on pakollinen."
         }
       ],
-      "range": "xsd:string",
-      "domain": [
-        "dli:CalendarEntry",
-        "dli:Event",
-        "dli:Task",
-        "dli:Message"
-      ],
+      "range": "xsd:boolean",
+      "domain": "dli:SupportedAttribute",
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:location",
+      "@id": "dli:responseType",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Response type"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Response type used in OAuth flow"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:role",
       "@type": "rdf:Property",
       "subPropertyOf": "dli:Attribute",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Lokaatio"
+          "@value": "Rooli"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Lokaatio - paikka jossa jokin tapahtuu"
+          "@value": "Määrittelee roolin, joka käyttäjällä on järjestelmässä"
         }
       ],
       "range": "xsd:string",
+      "domain": "dli:User",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:scopes",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Scopes"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Comma-separated list of scopes used in OAuth flow"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:startDate",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Alkupäivämäärä"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Alkupäivämäärä"
+        }
+      ],
+      "range": "dli:Rfc3339",
       "domain": [
         "dli:CalendarEntry",
         "dli:Event",
@@ -2056,47 +2109,136 @@
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:cc",
+      "@id": "dli:state",
       "@type": "rdf:Property",
-      "subPropertyOf": [
-        "dli:Attribute",
-        "dli:Collection"
-      ],
+      "subPropertyOf": "dli:Attribute",
       "rdfs:label": [
         {
-          "@language": "fi",
-          "@value": "CC"
+          "@language": "en",
+          "@value": "State"
         }
       ],
       "rdfs:comment": [
         {
-          "@language": "fi",
-          "@value": "Kopio"
+          "@language": "en",
+          "@value": "The particular state something is in"
         }
       ],
-      "range": "xsd:list",
-      "domain": "dli:Message",
+      "range": "xsd:string",
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:from",
+      "@id": "dli:supportedAttribute",
       "@type": "rdf:Property",
       "subPropertyOf": "dli:Attribute",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Lähtöidentiteetti"
+          "@value": "Tuetut attribuutit"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Identiteetti josta linkki lähtee"
+          "@value": "Attribuutit jotka tiedetään liittyvän identiteettiin"
+        }
+      ],
+      "range": "dli:SupportedAttribute",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:supportedClass",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Tuetut luokat"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Luokat jotka tiedetään kuuluvan identiteettiin"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:supportedType",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Tuetut tyypit"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Tyypit jotka tiedetään kuuluvan identiteettiin"
+        }
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:supportedValue",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Tuetut arvot"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Attribuutin tuetut arvot"
+        }
+      ],
+      "range": "xsd:list",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:title",
+      "@type": "rdf:Property",
+      "subPropertyOf": [
+        "rdfs:label",
+        "dli:Attribute"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Otsikko"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Otsikko"
         }
       ],
       "range": "xsd:string",
-      "domain": "dli:Link",
+      "domain": "dli:SupportedAttribute",
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
@@ -2122,48 +2264,134 @@
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:inLinks",
+      "@id": "dli:toIdentity",
       "@type": "rdf:Property",
-      "subPropertyOf": [
-        "dli:Attribute",
-        "dli:Collection"
-      ],
+      "subPropertyOf": "dli:Attribute",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Sisääntulevat linkit"
+          "@value": "Pääteidentiteetti"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "List sisääntulevista linkeistä toisesta identiteetistä"
+          "@value": "Identiteetti johon luokka on kiinnitetty"
         }
       ],
-      "range": "xsd:list",
+      "range": "xsd:string",
+      "domain": [
+        "dli:CalendarEntry",
+        "dli:Event",
+        "dli:Task",
+        "dli:Message"
+      ],
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     },
     {
-      "@id": "dli:outLinks",
+      "@id": "dli:updatedAt",
       "@type": "rdf:Property",
-      "subPropertyOf": [
-        "dli:Attribute",
-        "dli:Collection"
-      ],
+      "subPropertyOf": "dli:Attribute",
       "rdfs:label": [
         {
           "@language": "fi",
-          "@value": "Uloslähtevät linkit"
+          "@value": "Päivitetty"
         }
       ],
       "rdfs:comment": [
         {
           "@language": "fi",
-          "@value": "Lista ulos lähtevistä linkeistä toiseen identiteettiin"
+          "@value": "Päivämäärä jolloin identiteetti on päivitetty"
         }
       ],
-      "range": "xsd:list",
+      "range": "dli:Rfc3339",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:updatedBy",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Päivitti"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Käyttäjän ID joka päivitti identiteetin"
+        }
+      ],
+      "range": "xsd:string",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:usageType",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Käyttötarkoitus"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Määrittelee käyttötarkoituksen"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": [
+        "dli:Apartment",
+        "dli:Room",
+        "dli:Space"
+      ],
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:valueType",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "fi",
+          "@value": "Arvon tyyppi"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fi",
+          "@value": "Määrittelee attribuutin arvon tyypin, esim. xsd:integer, xsd:string, xsd:datetime"
+        }
+      ],
+      "range": "xsd:string",
+      "domain": "dli:SupportedAttribute",
+      "vs:term_status": "unstable",
+      "owl:versionInfo": "DRAFT"
+    },
+    {
+      "@id": "dli:webPageUrl",
+      "@type": "rdf:Property",
+      "subPropertyOf": "dli:Attribute",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Web page URL"
+        }
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "A URL to a web page"
+        }
+      ],
+      "range": "xsd:string",
       "vs:term_status": "unstable",
       "owl:versionInfo": "DRAFT"
     }
