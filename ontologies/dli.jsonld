@@ -1,6 +1,6 @@
 {
   "@context": {
-    "dli": "https://digitalliving.github.io/standards/ontologies/dli.jsonld#",
+    "dli": "https://standards.lifeengine.io/ontologies/dli.jsonld#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -10,8 +10,8 @@
     "dc": "http://purl.org/dc/elements/1.1/",
     "cc": "http://creativecommons.org/ns#",
     "vann": "http://purl.org/vocab/vann/",
-    "@vocab": "https://digitalliving.github.io/standards/ontologies/dli.jsonld#",
-    "@base": "https://digitalliving.github.io/standards/ontologies/dli.jsonld#",
+    "@vocab": "https://standards.lifeengine.io/ontologies/dli.jsonld#",
+    "@base": "https://standards.lifeengine.io/ontologies/dli.jsonld#",
     "defines": {
       "@reverse": "rdfs:isDefinedBy"
     },
@@ -38,7 +38,7 @@
       "@type": "@vocab"
     }
   },
-  "@id": "https://digitalliving.github.io/standards/ontologies/dli",
+  "@id": "https://standards.lifeengine.io/ontologies/dli",
   "@type": "owl:Ontology",
   "dct:title": "Digital Living Core Ontology",
   "dct:description": "The Digital Living Core Ontology is the base for all LifeEngine APIs.",
@@ -46,7 +46,7 @@
   "rdfs:comment": "An ontology used in the Digital Living LifeEngine APIs.",
   "dct:abstract": "The Digital Living ontology aims to provide a comprehensive set of classes and properties to describe real world entities.",
   "vann:preferredNamespacePrefix": "dli",
-  "vann:preferredNamespaceUri": "https://digitalliving.github.io/standards/ontologies/dli",
+  "vann:preferredNamespaceUri": "https://standards.lifeengine.io/ontologies/dli",
   "dct:rights": "TODO",
   "dct:publisher": "Digital Living International Oy",
   "cc:license": "https://tldrlegal.com/license/mit-license",
