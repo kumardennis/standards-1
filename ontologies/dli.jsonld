@@ -433,7 +433,7 @@
       "range": "xsd:string",
       "seeAlso": null,
       "subPropertyOf": "dli:Attribute",
-      "domain": "dli:User"
+      "domain": "dli:UserOf"
     },
     {
       "@id": "dli:endDate",
@@ -536,7 +536,7 @@
       "range": "xsd:string",
       "seeAlso": null,
       "subPropertyOf": "dli:Attribute",
-      "domain": "dli:User"
+      "domain": "dli:UserOf"
     },
     {
       "@id": "dli:from",
@@ -664,7 +664,7 @@
       "range": "xsd:string",
       "seeAlso": null,
       "subPropertyOf": "dli:Attribute",
-      "domain": "dli:User"
+      "domain": "dli:UserOf"
     },
     {
       "@id": "dli:location",
@@ -773,7 +773,7 @@
       "range": "xsd:string",
       "seeAlso": null,
       "subPropertyOf": "dli:Attribute",
-      "domain": "dli:User"
+      "domain": "dli:UserOf"
     },
     {
       "@id": "dli:platform",
@@ -951,7 +951,7 @@
       "range": "xsd:string",
       "seeAlso": null,
       "subPropertyOf": "dli:Attribute",
-      "domain": "dli:User"
+      "domain": "dli:UserOf"
     },
     {
       "@id": "dli:scopes",
@@ -1208,35 +1208,6 @@
       "seeAlso": null,
       "subPropertyOf": "dli:Attribute",
       "domain": null
-    },
-    {
-      "@id": "dli:usageType",
-      "@type": "rdf:Property",
-      "subClassOf": null,
-      "rdfs:label": [
-        {
-          "@language": "fi-fi",
-          "@value": "Käyttötarkoitus"
-        }
-      ],
-      "rdfs:comment": [
-        {
-          "@language": "fi-fi",
-          "@value": "Määrittelee käyttötarkoituksen"
-        }
-      ],
-      "vs:term_status": "unstable",
-      "owl:versionInfo": "DRAFT",
-      "owl:sameAs": null,
-      "owl:equivalentClass": null,
-      "range": "xsd:string",
-      "seeAlso": null,
-      "subPropertyOf": "dli:Attribute",
-      "domain": [
-        "dli:Apartment",
-        "dli:Room",
-        "dli:Space"
-      ]
     },
     {
       "@id": "dli:webPageUrl",
