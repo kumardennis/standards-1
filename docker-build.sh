@@ -2,32 +2,27 @@
 
 set -eo pipefail
 
+readonly STANDARD_VERSION="v1"
 readonly CNAME_ADDRESS="standards.lifeengine.io"
-readonly WORKDIR="/src"
-readonly ONT_FILE="/src/ontologies/dli.jsonld"
+readonly WORKDIR="/src/${STANDARD_VERSION}"
+readonly ONT_FILE="${WORKDIR}/Ontology/dli.jsonld"
 readonly OUT_FOLDER="/tmp/html"
-readonly ARTIFACTS="/artifacts"
+readonly ARTIFACTS_ROOT="/artifacts"
+readonly ARTIFACTS="${ARTIFACTS_ROOT}/${STANDARD_VERSION}"
 readonly THEME="darkly"
 
 cd "${WORKDIR}"
 
 mkdir "${OUT_FOLDER}"
+mkdir "${ARTIFACTS}"
 
-# Need to choose type of export, 2 = Multi-site HTML.
-echo 2 | ontodocs "${ONT_FILE}" -o "${OUT_FOLDER}" -t "Digital Living" --theme="${THEME}"
+ontospy gendocs "${ONT_FILE}" -o "${OUT_FOLDER}" --title "PDigital Living" --theme="${THEME}" --type 2
 
 # Copy the HTML to the artifacts folder.
 cp -R "${OUT_FOLDER}"/* "${ARTIFACTS}"/
 
-# Copy over the ontologies to GH pages
-cp -R "${WORKDIR}/ontologies" "${ARTIFACTS}"/
-
-if [[ -d "${WORKDIR}/contexts" ]]; then
-    cp -R "${WORKDIR}/contexts" "${ARTIFACTS}"/
-fi
-
-if [[ -d "${WORKDIR}/vocabularies" ]]; then
-    cp -R "${WORKDIR}/vocabularies" "${ARTIFACTS}"/
-fi
-
-echo "${CNAME_ADDRESS}" > "${ARTIFACTS}"/CNAME
+# Copy over the ontologies and contexts to GH pages
+cp -R "${WORKDIR}/Context" "${ARTIFACTS}"/
+cp -R "${WORKDIR}/Vocabulary" "${ARTIFACTS}"/
+cp -R "${WORKDIR}/ClassDefinitions" "${ARTIFACTS}"/
+echo "${CNAME_ADDRESS}" > "${ARTIFACTS_ROOT}"/CNAME

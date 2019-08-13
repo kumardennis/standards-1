@@ -1,0 +1,56 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@vocab": "https://standards.lifeengine.io/v1/Vocabulary/Identity/Digital/Software/App",
+        "@classDefinition": "https://standards.lifeengine.io/v1/ClassDefinitions/Identity/Digital/Software/App",
+        "pot": {
+            "@id": "https://standards.oftrust.net/v1/Vocabulary/",
+            "@prefix": true
+        },
+        "dli": {
+            "@id": "https://standards.lifeengine.io/v1/Vocabulary/",
+            "@prefix": true
+        },
+        "data": {
+            "@id": "dli:data"
+        },
+        "metadata": {
+            "@id": "dli:metadata"
+        },
+        "updatedAt": {
+            "@id": "dli:updatedAt",
+            "@nest": "metadata"
+        },
+        "createdBy": {
+            "@id": "dli:createdBy",
+            "@nest": "metadata"
+        },
+        "privacyPolicyUrl": {
+            "@id": "dli:privacyPolicyUrl",
+            "@nest": "data"
+        },
+        "iconUrl": {
+            "@id": "dli:iconUrl",
+            "@nest": "data"
+        },
+        "name": {
+            "@id": "dli:name"
+        },
+        "updatedBy": {
+            "@id": "dli:updatedBy",
+            "@nest": "metadata"
+        },
+        "createdAt": {
+            "@id": "dli:createdAt",
+            "@nest": "metadata"
+        },
+        "webpageUrl": {
+            "@id": "dli:webpageUrl",
+            "@nest": "data"
+        },
+        "description": {
+            "@id": "dli:description",
+            "@nest": "data"
+        }
+    }
+}
