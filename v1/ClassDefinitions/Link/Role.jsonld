@@ -88,7 +88,7 @@
                 "@id": "dli:from",
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Identity from",
-                "dli:required": false,
+                "dli:required": true,
                 "dli:description": {
                     "en-us": "Entity which is linked"
                 },
@@ -115,7 +115,7 @@
                 "@id": "dli:to",
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Identity to",
-                "dli:required": false,
+                "dli:required": true,
                 "dli:description": {
                     "en-us": "Entity which is linked"
                 },
