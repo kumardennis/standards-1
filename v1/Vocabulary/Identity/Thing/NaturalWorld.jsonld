@@ -58,6 +58,106 @@
             "fi-fi": "Luonnon muodostama ympäristö geologiasta, vedestä luonnon resusseihin ja ilmastoon - planeetta itse"
         }
     },
+    "data": {
+        "@id": "dli:data",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+            "en-us": "Data"
+        },
+        "rdfs:comment": {
+            "en-us": "Data container"
+        },
+        "domain": [
+            "dli:Link",
+            "dli:Identity"
+        ],
+        "range": [
+            "xsd:string"
+        ],
+        "owl:versionInfo": "DRAFT",
+        "vs:term_status": "unstable"
+    },
+    "updatedBy": {
+        "@id": "dli:updatedBy",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+            "en-us": "Updater",
+            "fi-fi": "Identieetin päivittäjä"
+        },
+        "rdfs:comment": {
+            "en-us": "Updater of an identity "
+        },
+        "domain": [
+            "dli:Identity",
+            "dli:Link"
+        ],
+        "range": [
+            "xsd:string"
+        ],
+        "owl:versionInfo": "DRAFT",
+        "vs:term_status": "unstable"
+    },
+    "name": {
+        "@id": "dli:name",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+            "en-us": "Identity name",
+            "fi-fi": "Identiteetin nimi"
+        },
+        "rdfs:comment": {
+            "en-us": "Name given to the Identity"
+        },
+        "domain": [
+            "dli:Person",
+            "dli:App",
+            "dli:DataProduct",
+            "dli:Identity"
+        ],
+        "range": [
+            "xsd:string"
+        ],
+        "owl:versionInfo": "DRAFT",
+        "vs:term_status": "unstable"
+    },
+    "createdAt": {
+        "@id": "dli:createdAt",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+            "fi-fi": "Luomisaika",
+            "en-us": "Creation time"
+        },
+        "rdfs:comment": {
+            "en-us": "Time when the data is created"
+        },
+        "domain": [
+            "dli:Identity",
+            "dli:Link"
+        ],
+        "range": [
+            "xsd:dateTime"
+        ],
+        "owl:versionInfo": "DRAFT",
+        "vs:term_status": "unstable"
+    },
+    "metadata": {
+        "@id": "dli:metadata",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+            "en-us": "Metadata"
+        },
+        "rdfs:comment": {
+            "en-us": "Metadata container"
+        },
+        "domain": [
+            "dli:Identity",
+            "dli:Link"
+        ],
+        "range": [
+            "xsd:string"
+        ],
+        "owl:versionInfo": "DRAFT",
+        "vs:term_status": "unstable"
+    },
     "updatedAt": {
         "@id": "dli:updatedAt",
         "@type": "rdf:Property",
@@ -82,111 +182,11 @@
         "@id": "dli:createdBy",
         "@type": "rdf:Property",
         "rdfs:label": {
-            "en-us": "Creator",
-            "fi-fi": "Identiteetin luoja"
+            "fi-fi": "Identiteetin luoja",
+            "en-us": "Creator"
         },
         "rdfs:comment": {
             "en-us": "Creator of and identity "
-        },
-        "domain": [
-            "dli:Link",
-            "dli:Identity"
-        ],
-        "range": [
-            "xsd:string"
-        ],
-        "owl:versionInfo": "DRAFT",
-        "vs:term_status": "unstable"
-    },
-    "updatedBy": {
-        "@id": "dli:updatedBy",
-        "@type": "rdf:Property",
-        "rdfs:label": {
-            "en-us": "Updater",
-            "fi-fi": "Identieetin päivittäjä"
-        },
-        "rdfs:comment": {
-            "en-us": "Updater of an identity "
-        },
-        "domain": [
-            "dli:Link",
-            "dli:Identity"
-        ],
-        "range": [
-            "xsd:string"
-        ],
-        "owl:versionInfo": "DRAFT",
-        "vs:term_status": "unstable"
-    },
-    "name": {
-        "@id": "dli:name",
-        "@type": "rdf:Property",
-        "rdfs:label": {
-            "fi-fi": "Identiteetin nimi",
-            "en-us": "Identity name"
-        },
-        "rdfs:comment": {
-            "en-us": "Name given to the Identity"
-        },
-        "domain": [
-            "dli:Person",
-            "dli:Identity",
-            "dli:App",
-            "dli:DataProduct"
-        ],
-        "range": [
-            "xsd:string"
-        ],
-        "owl:versionInfo": "DRAFT",
-        "vs:term_status": "unstable"
-    },
-    "createdAt": {
-        "@id": "dli:createdAt",
-        "@type": "rdf:Property",
-        "rdfs:label": {
-            "fi-fi": "Luomisaika",
-            "en-us": "Creation time"
-        },
-        "rdfs:comment": {
-            "en-us": "Time when the data is created"
-        },
-        "domain": [
-            "dli:Link",
-            "dli:Identity"
-        ],
-        "range": [
-            "xsd:dateTime"
-        ],
-        "owl:versionInfo": "DRAFT",
-        "vs:term_status": "unstable"
-    },
-    "metadata": {
-        "@id": "dli:metadata",
-        "@type": "rdf:Property",
-        "rdfs:label": {
-            "en-us": "Metadata"
-        },
-        "rdfs:comment": {
-            "en-us": "Metadata container"
-        },
-        "domain": [
-            "dli:Link",
-            "dli:Identity"
-        ],
-        "range": [
-            "xsd:string"
-        ],
-        "owl:versionInfo": "DRAFT",
-        "vs:term_status": "unstable"
-    },
-    "data": {
-        "@id": "dli:data",
-        "@type": "rdf:Property",
-        "rdfs:label": {
-            "en-us": "Data"
-        },
-        "rdfs:comment": {
-            "en-us": "Data container"
         },
         "domain": [
             "dli:Identity",
@@ -198,12 +198,12 @@
         "owl:versionInfo": "DRAFT",
         "vs:term_status": "unstable"
     },
-    "Land": {
+    "Water": {
         "rdfs:subClassOf": {
             "@id": "dli:Identity/Thing/NaturalWorld"
         }
     },
-    "Water": {
+    "Land": {
         "rdfs:subClassOf": {
             "@id": "dli:Identity/Thing/NaturalWorld"
         }

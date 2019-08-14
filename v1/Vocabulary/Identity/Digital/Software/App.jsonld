@@ -58,99 +58,18 @@
             "fi-fi": "Ohjelmisto sovellus"
         }
     },
-    "updatedAt": {
-        "@id": "dli:updatedAt",
+    "data": {
+        "@id": "dli:data",
         "@type": "rdf:Property",
         "rdfs:label": {
-            "en-us": "Update time",
-            "fi-fi": "Päivitysaika"
+            "en-us": "Data"
         },
         "rdfs:comment": {
-            "en-us": "Time when the data is updated"
+            "en-us": "Data container"
         },
         "domain": [
             "dli:Link",
             "dli:Identity"
-        ],
-        "range": [
-            "xsd:dateTime"
-        ],
-        "owl:versionInfo": "DRAFT",
-        "vs:term_status": "unstable"
-    },
-    "createdBy": {
-        "@id": "dli:createdBy",
-        "@type": "rdf:Property",
-        "rdfs:label": {
-            "en-us": "Creator",
-            "fi-fi": "Identiteetin luoja"
-        },
-        "rdfs:comment": {
-            "en-us": "Creator of and identity "
-        },
-        "domain": [
-            "dli:Link",
-            "dli:Identity"
-        ],
-        "range": [
-            "xsd:string"
-        ],
-        "owl:versionInfo": "DRAFT",
-        "vs:term_status": "unstable"
-    },
-    "privacyPolicyUrl": {
-        "@id": "dli:privacyPolicyUrl",
-        "@type": "rdf:Property",
-        "rdfs:label": {
-            "en-us": "Privacy policy URL",
-            "fi-fi": "Tietousojaselosteen URL"
-        },
-        "rdfs:comment": {
-            "en-us": "Privacy policy URL of an app"
-        },
-        "domain": [
-            "dli:App"
-        ],
-        "range": [
-            "xsd:string"
-        ],
-        "owl:versionInfo": "DRAFT",
-        "vs:term_status": "unstable"
-    },
-    "iconUrl": {
-        "@id": "dli:iconUrl",
-        "@type": "rdf:Property",
-        "rdfs:label": {
-            "en-us": "Icon URL",
-            "fi-fi": "Ikonin URL"
-        },
-        "rdfs:comment": {
-            "en-us": "Icon URL of an app"
-        },
-        "domain": [
-            "dli:App"
-        ],
-        "range": [
-            "xsd:string"
-        ],
-        "owl:versionInfo": "DRAFT",
-        "vs:term_status": "unstable"
-    },
-    "name": {
-        "@id": "dli:name",
-        "@type": "rdf:Property",
-        "rdfs:label": {
-            "fi-fi": "Nimi",
-            "en-us": "Name"
-        },
-        "rdfs:comment": {
-            "en-us": "Name given to the Identity"
-        },
-        "domain": [
-            "dli:Person",
-            "dli:Identity",
-            "dli:App",
-            "dli:DataProduct"
         ],
         "range": [
             "xsd:string"
@@ -169,8 +88,8 @@
             "en-us": "Updater of an identity "
         },
         "domain": [
-            "dli:Link",
-            "dli:Identity"
+            "dli:Identity",
+            "dli:Link"
         ],
         "range": [
             "xsd:string"
@@ -178,38 +97,21 @@
         "owl:versionInfo": "DRAFT",
         "vs:term_status": "unstable"
     },
-    "createdAt": {
-        "@id": "dli:createdAt",
+    "name": {
+        "@id": "dli:name",
         "@type": "rdf:Property",
         "rdfs:label": {
-            "fi-fi": "Luomisaika",
-            "en-us": "Creation time"
+            "en-us": "Identity name",
+            "fi-fi": "Nimi"
         },
         "rdfs:comment": {
-            "en-us": "Time when the data is created"
+            "en-us": "Name of the app"
         },
         "domain": [
-            "dli:Link",
+            "dli:Person",
+            "dli:App",
+            "dli:DataProduct",
             "dli:Identity"
-        ],
-        "range": [
-            "xsd:dateTime"
-        ],
-        "owl:versionInfo": "DRAFT",
-        "vs:term_status": "unstable"
-    },
-    "webpageUrl": {
-        "@id": "dli:webpageUrl",
-        "@type": "rdf:Property",
-        "rdfs:label": {
-            "fi-fi": "Websivun URL",
-            "en-us": "Webpage URL"
-        },
-        "rdfs:comment": {
-            "en-us": "Webpage URL of an app"
-        },
-        "domain": [
-            "dli:App"
         ],
         "range": [
             "xsd:string"
@@ -236,6 +138,45 @@
         "owl:versionInfo": "DRAFT",
         "vs:term_status": "unstable"
     },
+    "webpageUrl": {
+        "@id": "dli:webpageUrl",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+            "en-us": "Webpage URL",
+            "fi-fi": "Websivun URL"
+        },
+        "rdfs:comment": {
+            "en-us": "Webpage URL of an app"
+        },
+        "domain": [
+            "dli:App"
+        ],
+        "range": [
+            "xsd:string"
+        ],
+        "owl:versionInfo": "DRAFT",
+        "vs:term_status": "unstable"
+    },
+    "createdAt": {
+        "@id": "dli:createdAt",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+            "fi-fi": "Luomisaika",
+            "en-us": "Creation time"
+        },
+        "rdfs:comment": {
+            "en-us": "Time when the data is created"
+        },
+        "domain": [
+            "dli:Identity",
+            "dli:Link"
+        ],
+        "range": [
+            "xsd:dateTime"
+        ],
+        "owl:versionInfo": "DRAFT",
+        "vs:term_status": "unstable"
+    },
     "metadata": {
         "@id": "dli:metadata",
         "@type": "rdf:Property",
@@ -246,8 +187,8 @@
             "en-us": "Metadata container"
         },
         "domain": [
-            "dli:Link",
-            "dli:Identity"
+            "dli:Identity",
+            "dli:Link"
         ],
         "range": [
             "xsd:string"
@@ -255,18 +196,77 @@
         "owl:versionInfo": "DRAFT",
         "vs:term_status": "unstable"
     },
-    "data": {
-        "@id": "dli:data",
+    "privacyPolicyUrl": {
+        "@id": "dli:privacyPolicyUrl",
         "@type": "rdf:Property",
         "rdfs:label": {
-            "en-us": "Data"
+            "fi-fi": "Tietousojaselosteen URL",
+            "en-us": "Privacy policy URL"
         },
         "rdfs:comment": {
-            "en-us": "Data container"
+            "en-us": "Privacy policy URL of an app"
+        },
+        "domain": [
+            "dli:App"
+        ],
+        "range": [
+            "xsd:string"
+        ],
+        "owl:versionInfo": "DRAFT",
+        "vs:term_status": "unstable"
+    },
+    "updatedAt": {
+        "@id": "dli:updatedAt",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+            "en-us": "Update time",
+            "fi-fi": "Päivitysaika"
+        },
+        "rdfs:comment": {
+            "en-us": "Time when the data is updated"
+        },
+        "domain": [
+            "dli:Link",
+            "dli:Identity"
+        ],
+        "range": [
+            "xsd:dateTime"
+        ],
+        "owl:versionInfo": "DRAFT",
+        "vs:term_status": "unstable"
+    },
+    "createdBy": {
+        "@id": "dli:createdBy",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+            "fi-fi": "Identiteetin luoja",
+            "en-us": "Creator"
+        },
+        "rdfs:comment": {
+            "en-us": "Creator of and identity "
         },
         "domain": [
             "dli:Identity",
             "dli:Link"
+        ],
+        "range": [
+            "xsd:string"
+        ],
+        "owl:versionInfo": "DRAFT",
+        "vs:term_status": "unstable"
+    },
+    "iconUrl": {
+        "@id": "dli:iconUrl",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+            "en-us": "Icon URL",
+            "fi-fi": "Ikonin URL"
+        },
+        "rdfs:comment": {
+            "en-us": "Icon URL of an app"
+        },
+        "domain": [
+            "dli:App"
         ],
         "range": [
             "xsd:string"

@@ -44,6 +44,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Data",
                 "dli:required": false,
+                "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Data container"
                 },
@@ -59,6 +60,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Creation time",
                 "dli:required": false,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Time when the data is created"
                 },
@@ -74,6 +76,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Creator",
                 "dli:required": false,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Creator of and identity "
                 },
@@ -89,6 +92,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Description",
                 "dli:required": false,
+                "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Description of an app"
                 },
@@ -105,6 +109,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Icon URL",
                 "dli:required": false,
+                "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Icon URL of an app"
                 },
@@ -121,6 +126,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Metadata",
                 "dli:required": false,
+                "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Metadata container"
                 },
@@ -134,10 +140,11 @@
             "name": {
                 "@id": "dli:name",
                 "@type": "dli:SupportedAttribute",
-                "dli:title": "Name",
+                "dli:title": "Identity name",
                 "dli:required": false,
+                "dli:readonly": false,
                 "dli:description": {
-                    "en-us": "Name given to the Identity"
+                    "en-us": "Name of the app"
                 },
                 "dli:valueType": [
                     "xsd:string"
@@ -151,6 +158,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Privacy policy URL",
                 "dli:required": false,
+                "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Privacy policy URL of an app"
                 },
@@ -167,6 +175,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Update time",
                 "dli:required": false,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Time when the data is updated"
                 },
@@ -182,6 +191,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Updater",
                 "dli:required": false,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Updater of an identity "
                 },
@@ -197,6 +207,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Webpage URL",
                 "dli:required": false,
+                "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Webpage URL of an app"
                 },
@@ -204,8 +215,8 @@
                     "xsd:string"
                 ],
                 "xsd:restriction": {
-                    "xsd:maxLength": "255",
-                    "xsd:base": "xsd:string"
+                    "xsd:base": "xsd:string",
+                    "xsd:maxLength": "255"
                 }
             }
         }

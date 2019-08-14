@@ -17,6 +17,25 @@
         "metadata": {
             "@id": "dli:metadata"
         },
+        "updatedBy": {
+            "@id": "dli:updatedBy",
+            "@nest": "metadata"
+        },
+        "lastName": {
+            "@id": "dli:lastName",
+            "@nest": "data"
+        },
+        "name": {
+            "@id": "dli:name"
+        },
+        "firstName": {
+            "@id": "dli:firstName",
+            "@nest": "data"
+        },
+        "createdAt": {
+            "@id": "dli:createdAt",
+            "@nest": "metadata"
+        },
         "updatedAt": {
             "@id": "dli:updatedAt",
             "@nest": "metadata"
@@ -24,25 +43,6 @@
         "createdBy": {
             "@id": "dli:createdBy",
             "@nest": "metadata"
-        },
-        "updatedBy": {
-            "@id": "dli:updatedBy",
-            "@nest": "metadata"
-        },
-        "name": {
-            "@id": "dli:name"
-        },
-        "createdAt": {
-            "@id": "dli:createdAt",
-            "@nest": "metadata"
-        },
-        "lastName": {
-            "@id": "dli:lastName",
-            "@nest": "data"
-        },
-        "firstName": {
-            "@id": "dli:firstName",
-            "@nest": "data"
         }
     }
 }

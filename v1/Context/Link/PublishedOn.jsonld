@@ -17,6 +17,24 @@
         "metadata": {
             "@id": "dli:metadata"
         },
+        "productCode": {
+            "@id": "dli:productCode",
+            "@nest": "data"
+        },
+        "updatedBy": {
+            "@id": "dli:updatedBy",
+            "@nest": "metadata"
+        },
+        "from": {
+            "@id": "dli:from"
+        },
+        "to": {
+            "@id": "dli:to"
+        },
+        "createdAt": {
+            "@id": "dli:createdAt",
+            "@nest": "metadata"
+        },
         "updatedAt": {
             "@id": "dli:updatedAt",
             "@nest": "metadata"
@@ -24,24 +42,6 @@
         "createdBy": {
             "@id": "dli:createdBy",
             "@nest": "metadata"
-        },
-        "to": {
-            "@id": "dli:to"
-        },
-        "updatedBy": {
-            "@id": "dli:updatedBy",
-            "@nest": "metadata"
-        },
-        "createdAt": {
-            "@id": "dli:createdAt",
-            "@nest": "metadata"
-        },
-        "from": {
-            "@id": "dli:from"
-        },
-        "productCode": {
-            "@id": "dli:productCode",
-            "@nest": "data"
         }
     }
 }

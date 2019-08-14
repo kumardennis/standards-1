@@ -36,20 +36,28 @@
             ]
         }
     },
+    "SupportedClass": {
+        "@id": "dli:SupportedClass",
+        "@type": "dli:Class",
+        "rdfs:label": {
+            "fi-fi": "Tuettu luokka"
+        }
+    },
+    "Class": {
+        "@id": "dli:Class",
+        "@type": "dli:Class",
+        "subClassOf": "rdfs:Class",
+        "rdfs:label": {
+            "fi-fi": "Digital Living luokka",
+            "en-us": "Digital Living Class"
+        }
+    },
     "Identity": {
         "@id": "dli:Identity",
         "@type": "dli:Class",
         "rdfs:label": {
             "en-us": "Digital Living Identity",
             "fi-fi": "Digital Living Identiteetti"
-        }
-    },
-    "Link": {
-        "@id": "dli:Link",
-        "@type": "dli:Class",
-        "rdfs:label": {
-            "en-us": "Digital Living Link",
-            "fi-fi": "Digital Living Linkki"
         }
     },
     "SupportedAttribute": {
@@ -59,20 +67,12 @@
             "en-us": "Tuettu attribuutti"
         }
     },
-    "Class": {
-        "@id": "dli:Class",
-        "@type": "dli:Class",
-        "subClassOf": "rdfs:Class",
-        "rdfs:label": {
-            "en-us": "Digital Living Class",
-            "fi-fi": "Digital Living luokka"
-        }
-    },
-    "SupportedClass": {
-        "@id": "dli:SupportedClass",
+    "Link": {
+        "@id": "dli:Link",
         "@type": "dli:Class",
         "rdfs:label": {
-            "fi-fi": "Tuettu luokka"
+            "en-us": "Digital Living Link",
+            "fi-fi": "Digital Living Linkki"
         }
     }
 }

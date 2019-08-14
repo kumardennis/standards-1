@@ -58,34 +58,20 @@
     "@id": "dli:createdAt",
     "@type": "rdf:Property",
     "dli:nested": "metadata",
+    "dli:required": false,
+    "dli:readonly": true,
     "dli:label": [
       {
         "rdfs:label": {
           "@language": "en-us",
           "@value": "Creation time"
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:label": {
-          "@language": "en-us",
-          "@value": "Creation time"
-        },
-        "dli:domain": "dli:Link"
+        }
       },
       {
         "rdfs:label": {
           "@language": "fi-fi",
           "@value": "Luomisaika"
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:label": {
-          "@language": "fi-fi",
-          "@value": "Luomisaika"
-        },
-        "dli:domain": "dli:Link"
+        }
       }
     ],
     "dli:comment": [
@@ -93,15 +79,7 @@
         "rdfs:comment": {
           "@language": "en-us",
           "@value": "Time when the data is created"
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:comment": {
-          "@language": "en-us",
-          "@value": "Time when the data is created"
-        },
-        "dli:domain": "dli:Link"
+        }
       }
     ],
     "xsd:restriction": {
@@ -121,34 +99,20 @@
     "@id": "dli:updatedAt",
     "@type": "rdf:Property",
     "dli:nested": "metadata",
+    "dli:required": false,
+    "dli:readonly": true,
     "dli:label": [
       {
         "rdfs:label": {
           "@language": "en-us",
           "@value": "Update time"
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:label": {
-          "@language": "en-us",
-          "@value": "Update time"
-        },
-        "dli:domain": "dli:Link"
+        }
       },
       {
         "rdfs:label": {
           "@language": "fi-fi",
           "@value": "Päivitysaika"
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:label": {
-          "@language": "fi-fi",
-          "@value": "Päivitysaika"
-        },
-        "dli:domain": "dli:Link"
+        }
       }
     ],
     "dli:comment": [
@@ -156,15 +120,7 @@
         "rdfs:comment": {
           "@language": "en-us",
           "@value": "Time when the data is updated"
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:comment": {
-          "@language": "en-us",
-          "@value": "Time when the data is updated"
-        },
-        "dli:domain": "dli:Link"
+        }
       }
     ],
     "xsd:restriction": {
@@ -184,34 +140,20 @@
     "@id": "dli:createdBy",
     "@type": "rdf:Property",
     "dli:nested": "metadata",
+    "dli:required": false,
+    "dli:readonly": true,
     "dli:label": [
       {
         "rdfs:label": {
           "@language": "en-us",
           "@value": "Creator"
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:label": {
-          "@language": "en-us",
-          "@value": "Creator"
-        },
-        "dli:domain": "dli:Link"
+        }
       },
       {
         "rdfs:label": {
           "@language": "fi-fi",
           "@value": "Identiteetin luoja"
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:label": {
-          "@language": "fi-fi",
-          "@value": "Identiteetin luoja"
-        },
-        "dli:domain": "dli:Link"
+        }
       }
     ],
     "dli:comment": [
@@ -219,15 +161,7 @@
         "rdfs:comment": {
           "@language": "en-us",
           "@value": "Creator of and identity "
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:comment": {
-          "@language": "en-us",
-          "@value": "Creator of and identity "
-        },
-        "dli:domain": "dli:Link"
+        }
       }
     ],
     "xsd:restriction": {
@@ -247,34 +181,20 @@
     "@id": "dli:updatedBy",
     "@type": "rdf:Property",
     "dli:nested": "metadata",
+    "dli:required": false,
+    "dli:readonly": true,
     "dli:label": [
       {
         "rdfs:label": {
           "@language": "en-us",
           "@value": "Updater"
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:label": {
-          "@language": "en-us",
-          "@value": "Updater"
-        },
-        "dli:domain": "dli:Link"
+        }
       },
       {
         "rdfs:label": {
           "@language": "fi-fi",
           "@value": "Identieetin päivittäjä"
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:label": {
-          "@language": "fi-fi",
-          "@value": "Identieetin päivittäjä"
-        },
-        "dli:domain": "dli:Link"
+        }
       }
     ],
     "dli:comment": [
@@ -282,15 +202,7 @@
         "rdfs:comment": {
           "@language": "en-us",
           "@value": "Updater of an identity "
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:comment": {
-          "@language": "en-us",
-          "@value": "Updater of an identity "
-        },
-        "dli:domain": "dli:Link"
+        }
       }
     ],
     "xsd:restriction": {
@@ -309,6 +221,8 @@
   {
     "@id": "dli:name",
     "@type": "rdf:Property",
+    "dli:required": false,
+    "dli:readonly": false,
     "dli:label": [
       {
         "rdfs:label": {
@@ -415,20 +329,14 @@
   {
     "@id": "dli:data",
     "@type": "rdf:Property",
+    "dli:required": false,
+    "dli:readonly": false,
     "dli:label": [
       {
         "rdfs:label": {
           "@language": "en-us",
           "@value": "Data"
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:label": {
-          "@language": "en-us",
-          "@value": "Data"
-        },
-        "dli:domain": "dli:Link"
+        }
       }
     ],
     "dli:comment": [
@@ -436,15 +344,7 @@
         "rdfs:comment": {
           "@language": "en-us",
           "@value": "Data container"
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:comment": {
-          "@language": "en-us",
-          "@value": "Data container"
-        },
-        "dli:domain": "dli:Link"
+        }
       }
     ],
     "xsd:restriction": {
@@ -463,20 +363,14 @@
   {
     "@id": "dli:metadata",
     "@type": "rdf:Property",
+    "dli:required": false,
+    "dli:readonly": false,
     "dli:label": [
       {
         "rdfs:label": {
           "@language": "en-us",
           "@value": "Metadata"
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:label": {
-          "@language": "en-us",
-          "@value": "Metadata"
-        },
-        "dli:domain": "dli:Link"
+        }
       }
     ],
     "dli:comment": [
@@ -484,15 +378,7 @@
         "rdfs:comment": {
           "@language": "en-us",
           "@value": "Metadata container"
-        },
-        "dli:domain": "dli:Identity"
-      },
-      {
-        "rdfs:comment": {
-          "@language": "en-us",
-          "@value": "Metadata container"
-        },
-        "dli:domain": "dli:Link"
+        }
       }
     ],
     "xsd:restriction": {
@@ -511,6 +397,8 @@
   {
     "@id": "dli:from",
     "@type": "rdf:Property",
+    "dli:required": true,
+    "dli:readonly": true,
     "dli:label": [
       {
         "rdfs:label": {
@@ -533,7 +421,7 @@
       "dli:Link"
     ],
     "range": [
-      "pot:Class"
+      "dli:Class"
     ],
     "vs:term_status": "unstable",
     "owl:versionInfo": "DRAFT"
@@ -541,6 +429,8 @@
   {
     "@id": "dli:to",
     "@type": "rdf:Property",
+    "dli:required": true,
+    "dli:readonly": true,
     "dli:label": [
       {
         "rdfs:label": {
@@ -563,7 +453,7 @@
       "dli:Link"
     ],
     "range": [
-      "pot:Class"
+      "dli:Class"
     ],
     "vs:term_status": "unstable",
     "owl:versionInfo": "DRAFT"
@@ -572,6 +462,8 @@
     "@id": "dli:lastName",
     "@type": "rdf:Property",
     "dli:nested": "data",
+    "dli:required": false,
+    "dli:readonly": false,
     "dli:label": [
       {
         "rdfs:label": {
@@ -614,6 +506,8 @@
     "@id": "dli:firstName",
     "@type": "rdf:Property",
     "dli:nested": "data",
+    "dli:required": false,
+    "dli:readonly": false,
     "dli:label": [
       {
         "rdfs:label": {
@@ -656,6 +550,8 @@
     "@id": "dli:description",
     "@type": "rdf:Property",
     "dli:nested": "data",
+    "dli:required": false,
+    "dli:readonly": false,
     "dli:label": [
       {
         "rdfs:label": {
@@ -698,6 +594,8 @@
     "@id": "dli:privacyPolicyUrl",
     "@type": "rdf:Property",
     "dli:nested": "data",
+    "dli:required": false,
+    "dli:readonly": false,
     "dli:label": [
       {
         "rdfs:label": {
@@ -740,6 +638,8 @@
     "@id": "dli:iconUrl",
     "@type": "rdf:Property",
     "dli:nested": "data",
+    "dli:required": false,
+    "dli:readonly": false,
     "dli:label": [
       {
         "rdfs:label": {
@@ -782,6 +682,8 @@
     "@id": "dli:webpageUrl",
     "@type": "rdf:Property",
     "dli:nested": "data",
+    "dli:required": false,
+    "dli:readonly": false,
     "dli:label": [
       {
         "rdfs:label": {
@@ -824,6 +726,8 @@
     "@id": "dli:productCode",
     "@type": "rdf:Property",
     "dli:nested": "data",
+    "dli:required": true,
+    "dli:readonly": false,
     "dli:label": [
       {
         "rdfs:label": {
@@ -866,6 +770,8 @@
     "@id": "dli:contentId",
     "@type": "rdf:Property",
     "dli:nested": "data",
+    "dli:required": false,
+    "dli:readonly": false,
     "dli:label": [
       {
         "rdfs:label": {
@@ -2736,6 +2642,8 @@
     "@id": "dli:domain",
     "@type": "rdf:Property",
     "dli:nested": "data",
+    "dli:required": false,
+    "dli:readonly": false,
     "xsd:restriction": {
       "xsd:base": "xsd:string",
       "xsd:maxLength": 500
@@ -2751,6 +2659,8 @@
     "@id": "dli:nested",
     "@type": "rdf:Property",
     "dli:nested": "data",
+    "dli:required": false,
+    "dli:readonly": false,
     "xsd:restriction": {
       "xsd:base": "xsd:string",
       "xsd:maxLength": 500
@@ -2766,6 +2676,8 @@
     "@id": "dli:contextName",
     "@type": "rdf:Property",
     "dli:nested": "data",
+    "dli:required": false,
+    "dli:readonly": false,
     "xsd:restriction": {
       "xsd:base": "xsd:string",
       "xsd:maxLength": 500
@@ -2780,6 +2692,8 @@
   {
     "@id": "dli:title",
     "@type": "rdf:Property",
+    "dli:required": false,
+    "dli:readonly": false,
     "xsd:restriction": {
       "xsd:base": "xsd:string",
       "xsd:maxLength": 500
@@ -2794,6 +2708,8 @@
   {
     "@id": "dli:required",
     "@type": "rdf:Property",
+    "dli:required": false,
+    "dli:readonly": false,
     "xsd:restriction": {
       "xsd:base": "xsd:string",
       "xsd:maxLength": 500
@@ -2808,6 +2724,8 @@
   {
     "@id": "dli:valueType",
     "@type": "rdf:Property",
+    "dli:required": false,
+    "dli:readonly": false,
     "xsd:restriction": {
       "xsd:base": "xsd:string",
       "xsd:maxLength": 500
@@ -2822,8 +2740,24 @@
   {
     "@id": "dli:supportedClass",
     "@type": "rdf:Property",
-    "dli:label": [],
-    "dli:comment": [],
+    "dli:required": false,
+    "dli:readonly": false,
+    "dli:label": [
+      {
+        "rdfs:label": {
+          "@language": "fi-fi",
+          "@value": "Tuetut luokat"
+        }
+      }
+    ],
+    "dli:comment": [
+      {
+        "rdfs:comment": {
+          "@language": "fi-fi",
+          "@value": "Luokat jotka tiedetään kuuluvan identiteettiin"
+        }
+      }
+    ],
     "xsd:restriction": {
       "xsd:base": "xsd:string",
       "xsd:maxLength": 500
@@ -2838,8 +2772,24 @@
   {
     "@id": "dli:supportedAttribute",
     "@type": "rdf:Property",
-    "dli:label": [],
-    "dli:comment": [],
+    "dli:required": false,
+    "dli:readonly": false,
+    "dli:label": [
+      {
+        "rdfs:label": {
+          "@language": "fi-fi",
+          "@value": "Tuetut attribuutit"
+        }
+      }
+    ],
+    "dli:comment": [
+      {
+        "rdfs:comment": {
+          "@language": "fi-fi",
+          "@value": "Attribuutit jotka tiedetään liittyvän identiteettiin"
+        }
+      }
+    ],
     "xsd:restriction": {
       "xsd:base": "xsd:string",
       "xsd:maxLength": 500
@@ -2852,4 +2802,4 @@
     "owl:versionInfo": "DRAFT"
   }
 ]
-}
+ }

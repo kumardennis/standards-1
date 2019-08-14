@@ -44,6 +44,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Data",
                 "dli:required": false,
+                "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Data container"
                 },
@@ -59,6 +60,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Content ID",
                 "dli:required": false,
+                "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Data content Id"
                 },
@@ -75,6 +77,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Creation time",
                 "dli:required": false,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Time when the data is created"
                 },
@@ -90,6 +93,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Creator",
                 "dli:required": false,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Creator of and identity "
                 },
@@ -105,11 +109,12 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Identity from",
                 "dli:required": true,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Entity which is linked"
                 },
                 "dli:valueType": [
-                    "pot:Class"
+                    "dli:Class"
                 ]
             },
             "metadata": {
@@ -117,6 +122,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Metadata",
                 "dli:required": false,
+                "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Metadata container"
                 },
@@ -132,11 +138,12 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Identity to",
                 "dli:required": true,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Entity which is linked"
                 },
                 "dli:valueType": [
-                    "pot:Class"
+                    "dli:Class"
                 ]
             },
             "updatedAt": {
@@ -144,6 +151,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Update time",
                 "dli:required": false,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Time when the data is updated"
                 },
@@ -159,6 +167,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Updater",
                 "dli:required": false,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Updater of an identity "
                 },

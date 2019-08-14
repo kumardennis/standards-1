@@ -58,35 +58,14 @@
             "fi-fi": "Luonnollinen henkilö, yksilö ja yksityinen oikeushenkilö"
         }
     },
-    "updatedAt": {
-        "@id": "dli:updatedAt",
+    "data": {
+        "@id": "dli:data",
         "@type": "rdf:Property",
         "rdfs:label": {
-            "en-us": "Update time",
-            "fi-fi": "Päivitysaika"
+            "en-us": "Data"
         },
         "rdfs:comment": {
-            "en-us": "Time when the data is updated"
-        },
-        "domain": [
-            "dli:Link",
-            "dli:Identity"
-        ],
-        "range": [
-            "xsd:dateTime"
-        ],
-        "owl:versionInfo": "DRAFT",
-        "vs:term_status": "unstable"
-    },
-    "createdBy": {
-        "@id": "dli:createdBy",
-        "@type": "rdf:Property",
-        "rdfs:label": {
-            "en-us": "Creator",
-            "fi-fi": "Identiteetin luoja"
-        },
-        "rdfs:comment": {
-            "en-us": "Creator of and identity "
+            "en-us": "Data container"
         },
         "domain": [
             "dli:Link",
@@ -109,8 +88,27 @@
             "en-us": "Updater of an identity "
         },
         "domain": [
-            "dli:Link",
-            "dli:Identity"
+            "dli:Identity",
+            "dli:Link"
+        ],
+        "range": [
+            "xsd:string"
+        ],
+        "owl:versionInfo": "DRAFT",
+        "vs:term_status": "unstable"
+    },
+    "lastName": {
+        "@id": "dli:lastName",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+            "fi-fi": "Etunimi",
+            "en-us": "Last name"
+        },
+        "rdfs:comment": {
+            "en-us": "Last name of a person"
+        },
+        "domain": [
+            "dli:Person"
         ],
         "range": [
             "xsd:string"
@@ -130,48 +128,9 @@
         },
         "domain": [
             "dli:Person",
-            "dli:Identity",
             "dli:App",
-            "dli:DataProduct"
-        ],
-        "range": [
-            "xsd:string"
-        ],
-        "owl:versionInfo": "DRAFT",
-        "vs:term_status": "unstable"
-    },
-    "createdAt": {
-        "@id": "dli:createdAt",
-        "@type": "rdf:Property",
-        "rdfs:label": {
-            "fi-fi": "Luomisaika",
-            "en-us": "Creation time"
-        },
-        "rdfs:comment": {
-            "en-us": "Time when the data is created"
-        },
-        "domain": [
-            "dli:Link",
+            "dli:DataProduct",
             "dli:Identity"
-        ],
-        "range": [
-            "xsd:dateTime"
-        ],
-        "owl:versionInfo": "DRAFT",
-        "vs:term_status": "unstable"
-    },
-    "lastName": {
-        "@id": "dli:lastName",
-        "@type": "rdf:Property",
-        "rdfs:label": {
-            "fi-fi": "Etunimi",
-            "en-us": "Last name"
-        },
-        "rdfs:comment": {
-            "en-us": "Last name of a person"
-        },
-        "domain": [
-            "dli:Person"
         ],
         "range": [
             "xsd:string"
@@ -198,6 +157,26 @@
         "owl:versionInfo": "DRAFT",
         "vs:term_status": "unstable"
     },
+    "createdAt": {
+        "@id": "dli:createdAt",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+            "fi-fi": "Luomisaika",
+            "en-us": "Creation time"
+        },
+        "rdfs:comment": {
+            "en-us": "Time when the data is created"
+        },
+        "domain": [
+            "dli:Identity",
+            "dli:Link"
+        ],
+        "range": [
+            "xsd:dateTime"
+        ],
+        "owl:versionInfo": "DRAFT",
+        "vs:term_status": "unstable"
+    },
     "metadata": {
         "@id": "dli:metadata",
         "@type": "rdf:Property",
@@ -208,8 +187,8 @@
             "en-us": "Metadata container"
         },
         "domain": [
-            "dli:Link",
-            "dli:Identity"
+            "dli:Identity",
+            "dli:Link"
         ],
         "range": [
             "xsd:string"
@@ -217,14 +196,35 @@
         "owl:versionInfo": "DRAFT",
         "vs:term_status": "unstable"
     },
-    "data": {
-        "@id": "dli:data",
+    "updatedAt": {
+        "@id": "dli:updatedAt",
         "@type": "rdf:Property",
         "rdfs:label": {
-            "en-us": "Data"
+            "en-us": "Update time",
+            "fi-fi": "Päivitysaika"
         },
         "rdfs:comment": {
-            "en-us": "Data container"
+            "en-us": "Time when the data is updated"
+        },
+        "domain": [
+            "dli:Link",
+            "dli:Identity"
+        ],
+        "range": [
+            "xsd:dateTime"
+        ],
+        "owl:versionInfo": "DRAFT",
+        "vs:term_status": "unstable"
+    },
+    "createdBy": {
+        "@id": "dli:createdBy",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+            "fi-fi": "Identiteetin luoja",
+            "en-us": "Creator"
+        },
+        "rdfs:comment": {
+            "en-us": "Creator of and identity "
         },
         "domain": [
             "dli:Identity",

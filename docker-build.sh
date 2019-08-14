@@ -16,7 +16,7 @@ cd "${WORKDIR}"
 mkdir "${OUT_FOLDER}"
 mkdir "${ARTIFACTS}"
 
-ontospy gendocs "${ONT_FILE}" -o "${OUT_FOLDER}" --title "PDigital Living" --theme="${THEME}" --type 2
+ontospy gendocs "${ONT_FILE}" -o "${OUT_FOLDER}" --title "Digital Living" --theme="${THEME}" --type 2
 
 # Copy the HTML to the artifacts folder.
 cp -R "${OUT_FOLDER}"/* "${ARTIFACTS}"/
