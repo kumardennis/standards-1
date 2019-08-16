@@ -17,31 +17,31 @@
         "metadata": {
             "@id": "dli:metadata"
         },
-        "productCode": {
-            "@id": "dli:productCode",
-            "@nest": "data"
-        },
         "updatedBy": {
             "@id": "dli:updatedBy",
             "@nest": "metadata"
         },
-        "from": {
-            "@id": "dli:from"
+        "productCode": {
+            "@id": "dli:productCode",
+            "@nest": "data"
         },
         "to": {
             "@id": "dli:to"
         },
-        "createdAt": {
-            "@id": "dli:createdAt",
+        "createdBy": {
+            "@id": "dli:createdBy",
             "@nest": "metadata"
         },
         "updatedAt": {
             "@id": "dli:updatedAt",
             "@nest": "metadata"
         },
-        "createdBy": {
-            "@id": "dli:createdBy",
+        "createdAt": {
+            "@id": "dli:createdAt",
             "@nest": "metadata"
+        },
+        "from": {
+            "@id": "dli:from"
         }
     }
 }

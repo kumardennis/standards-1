@@ -35,15 +35,15 @@
         "@type": "dli:Class",
         "subClassOf": "dli:Identity/Virtual",
         "rdfs:label": {
-            "en-us": "Asset",
-            "fi-fi": "Varallisuuserä"
+            "fi-fi": "Varallisuuserä",
+            "en-us": "Asset"
         },
         "dli:supportedAttribute": {
             "data": {
                 "@id": "dli:data",
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Data",
-                "dli:required": false,
+                "dli:required": true,
                 "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Data container"
@@ -92,7 +92,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Metadata",
                 "dli:required": false,
-                "dli:readonly": false,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Metadata container"
                 },
@@ -107,7 +107,7 @@
                 "@id": "dli:name",
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Identity name",
-                "dli:required": false,
+                "dli:required": true,
                 "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Name given to the Identity"

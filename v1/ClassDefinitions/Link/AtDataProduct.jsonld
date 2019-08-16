@@ -35,8 +35,8 @@
         "@type": "dli:Class",
         "subClassOf": "dli:Link",
         "rdfs:label": {
-            "en-us": "Data Product",
-            "fi-fi": "Tietotuote"
+            "fi-fi": "Tietotuote",
+            "en-us": "Data Product"
         },
         "dli:supportedAttribute": {
             "data": {
@@ -68,8 +68,8 @@
                     "xsd:string"
                 ],
                 "xsd:restriction": {
-                    "xsd:base": "xsd:string",
-                    "xsd:maxLength": "30"
+                    "xsd:maxLength": "30",
+                    "xsd:base": "xsd:string"
                 }
             },
             "createdAt": {
@@ -108,7 +108,7 @@
                 "@id": "dli:from",
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Identity from",
-                "dli:required": true,
+                "dli:required": false,
                 "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Entity which is linked"
@@ -122,7 +122,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Metadata",
                 "dli:required": false,
-                "dli:readonly": false,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Metadata container"
                 },
@@ -137,7 +137,7 @@
                 "@id": "dli:to",
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Identity to",
-                "dli:required": true,
+                "dli:required": false,
                 "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Entity which is linked"

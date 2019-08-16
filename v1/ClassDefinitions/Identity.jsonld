@@ -34,15 +34,15 @@
         "@id": "dli:Identity",
         "@type": "dli:Class",
         "rdfs:label": {
-            "en-us": "Digital Living Identity",
-            "fi-fi": "Digital Living Identiteetti"
+            "fi-fi": "Digital Living Identiteetti",
+            "en-us": "Digital Living Identity"
         },
         "dli:supportedAttribute": {
             "data": {
                 "@id": "dli:data",
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Data",
-                "dli:required": false,
+                "dli:required": true,
                 "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Data container"
@@ -91,7 +91,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Metadata",
                 "dli:required": false,
-                "dli:readonly": false,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Metadata container"
                 },
@@ -106,7 +106,7 @@
                 "@id": "dli:name",
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Identity name",
-                "dli:required": false,
+                "dli:required": true,
                 "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Name given to the Identity"

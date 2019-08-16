@@ -58,25 +58,6 @@
             "fi-fi": "Yhteiskunnan infrastruktuuri (perusrakenteet ja varusrakenne) muodostuu niistä palveluista ja rakenteista, jotka mahdollistavat yhteiskunnan toiminnan. "
         }
     },
-    "data": {
-        "@id": "dli:data",
-        "@type": "rdf:Property",
-        "rdfs:label": {
-            "en-us": "Data"
-        },
-        "rdfs:comment": {
-            "en-us": "Data container"
-        },
-        "domain": [
-            "dli:Link",
-            "dli:Identity"
-        ],
-        "range": [
-            "xsd:string"
-        ],
-        "owl:versionInfo": "DRAFT",
-        "vs:term_status": "unstable"
-    },
     "updatedBy": {
         "@id": "dli:updatedBy",
         "@type": "rdf:Property",
@@ -101,17 +82,17 @@
         "@id": "dli:name",
         "@type": "rdf:Property",
         "rdfs:label": {
-            "en-us": "Identity name",
-            "fi-fi": "Identiteetin nimi"
+            "fi-fi": "Identiteetin nimi",
+            "en-us": "Identity name"
         },
         "rdfs:comment": {
             "en-us": "Name given to the Identity"
         },
         "domain": [
             "dli:Person",
-            "dli:App",
+            "dli:Identity",
             "dli:DataProduct",
-            "dli:Identity"
+            "dli:App"
         ],
         "range": [
             "xsd:string"
@@ -119,22 +100,22 @@
         "owl:versionInfo": "DRAFT",
         "vs:term_status": "unstable"
     },
-    "createdAt": {
-        "@id": "dli:createdAt",
+    "createdBy": {
+        "@id": "dli:createdBy",
         "@type": "rdf:Property",
         "rdfs:label": {
-            "fi-fi": "Luomisaika",
-            "en-us": "Creation time"
+            "fi-fi": "Identiteetin luoja",
+            "en-us": "Creator"
         },
         "rdfs:comment": {
-            "en-us": "Time when the data is created"
+            "en-us": "Creator of and identity "
         },
         "domain": [
             "dli:Identity",
             "dli:Link"
         ],
         "range": [
-            "xsd:dateTime"
+            "xsd:string"
         ],
         "owl:versionInfo": "DRAFT",
         "vs:term_status": "unstable"
@@ -178,19 +159,38 @@
         "owl:versionInfo": "DRAFT",
         "vs:term_status": "unstable"
     },
-    "createdBy": {
-        "@id": "dli:createdBy",
+    "createdAt": {
+        "@id": "dli:createdAt",
         "@type": "rdf:Property",
         "rdfs:label": {
-            "fi-fi": "Identiteetin luoja",
-            "en-us": "Creator"
+            "en-us": "Creation time",
+            "fi-fi": "Luomisaika"
         },
         "rdfs:comment": {
-            "en-us": "Creator of and identity "
+            "en-us": "Time when the data is created"
         },
         "domain": [
-            "dli:Identity",
-            "dli:Link"
+            "dli:Link",
+            "dli:Identity"
+        ],
+        "range": [
+            "xsd:dateTime"
+        ],
+        "owl:versionInfo": "DRAFT",
+        "vs:term_status": "unstable"
+    },
+    "data": {
+        "@id": "dli:data",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+            "en-us": "Data"
+        },
+        "rdfs:comment": {
+            "en-us": "Data container"
+        },
+        "domain": [
+            "dli:Link",
+            "dli:Identity"
         ],
         "range": [
             "xsd:string"

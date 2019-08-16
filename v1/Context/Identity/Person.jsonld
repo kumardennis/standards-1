@@ -21,12 +21,21 @@
             "@id": "dli:updatedBy",
             "@nest": "metadata"
         },
+        "name": {
+            "@id": "dli:name",
+            "@nest": "data"
+        },
+        "createdBy": {
+            "@id": "dli:createdBy",
+            "@nest": "metadata"
+        },
         "lastName": {
             "@id": "dli:lastName",
             "@nest": "data"
         },
-        "name": {
-            "@id": "dli:name"
+        "updatedAt": {
+            "@id": "dli:updatedAt",
+            "@nest": "metadata"
         },
         "firstName": {
             "@id": "dli:firstName",
@@ -34,14 +43,6 @@
         },
         "createdAt": {
             "@id": "dli:createdAt",
-            "@nest": "metadata"
-        },
-        "updatedAt": {
-            "@id": "dli:updatedAt",
-            "@nest": "metadata"
-        },
-        "createdBy": {
-            "@id": "dli:createdBy",
             "@nest": "metadata"
         }
     }

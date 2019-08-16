@@ -90,7 +90,7 @@
                 "@id": "dli:from",
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Identity from",
-                "dli:required": true,
+                "dli:required": false,
                 "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Entity which is linked"
@@ -104,7 +104,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Metadata",
                 "dli:required": false,
-                "dli:readonly": false,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Metadata container"
                 },
@@ -119,7 +119,7 @@
                 "@id": "dli:to",
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Identity to",
-                "dli:required": true,
+                "dli:required": false,
                 "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Entity which is linked"

@@ -43,7 +43,7 @@
                 "@id": "dli:data",
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Data",
-                "dli:required": false,
+                "dli:required": true,
                 "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Data container"
@@ -92,7 +92,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Metadata",
                 "dli:required": false,
-                "dli:readonly": false,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Metadata container"
                 },
@@ -106,11 +106,11 @@
             "name": {
                 "@id": "dli:name",
                 "@type": "dli:SupportedAttribute",
-                "dli:title": "Identity name",
-                "dli:required": false,
+                "dli:title": "Name",
+                "dli:required": true,
                 "dli:readonly": false,
                 "dli:description": {
-                    "en-us": "Name of the data product"
+                    "en-us": "Name given to the Identity"
                 },
                 "dli:valueType": [
                     "xsd:string"

@@ -35,15 +35,15 @@
         "@type": "dli:Class",
         "subClassOf": "dli:Identity",
         "rdfs:label": {
-            "fi-fi": "Ihminen",
-            "en-us": "Human"
+            "en-us": "Human",
+            "fi-fi": "Ihminen"
         },
         "dli:supportedAttribute": {
             "data": {
                 "@id": "dli:data",
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Data",
-                "dli:required": false,
+                "dli:required": true,
                 "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Data container"
@@ -100,8 +100,8 @@
                     "xsd:string"
                 ],
                 "xsd:restriction": {
-                    "xsd:maxLength": "50",
-                    "xsd:base": "xsd:string"
+                    "xsd:base": "xsd:string",
+                    "xsd:maxLength": "50"
                 }
             },
             "lastName": {
@@ -126,7 +126,7 @@
                 "@type": "dli:SupportedAttribute",
                 "dli:title": "Metadata",
                 "dli:required": false,
-                "dli:readonly": false,
+                "dli:readonly": true,
                 "dli:description": {
                     "en-us": "Metadata container"
                 },
@@ -140,8 +140,8 @@
             "name": {
                 "@id": "dli:name",
                 "@type": "dli:SupportedAttribute",
-                "dli:title": "Name",
-                "dli:required": false,
+                "dli:title": "Identity name",
+                "dli:required": true,
                 "dli:readonly": false,
                 "dli:description": {
                     "en-us": "Name given to the Identity"

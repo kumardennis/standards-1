@@ -22,18 +22,19 @@
             "@nest": "metadata"
         },
         "name": {
-            "@id": "dli:name"
+            "@id": "dli:name",
+            "@nest": "data"
         },
-        "createdAt": {
-            "@id": "dli:createdAt",
+        "createdBy": {
+            "@id": "dli:createdBy",
             "@nest": "metadata"
         },
         "updatedAt": {
             "@id": "dli:updatedAt",
             "@nest": "metadata"
         },
-        "createdBy": {
-            "@id": "dli:createdBy",
+        "createdAt": {
+            "@id": "dli:createdAt",
             "@nest": "metadata"
         }
     }
