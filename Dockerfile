@@ -1,13 +1,19 @@
 FROM frolvlad/alpine-python3
 
+RUN apk add --update --no-cache \
+    python3-dev \
+    build-base \
+    linux-headers
+
 ADD . /src
 WORKDIR /src
 
-RUN apk add --update --no-cache --virtual build-dependencies \
+RUN mkdir /artifacts
+
+RUN chmod +x *.sh && ./setup.sh
+
+RUN apk del \
     python3-dev \
     build-base \
-    linux-headers \
- && chmod +x docker-*.sh \
- && mkdir /artifacts \
- && ./docker-setup.sh \
- && apk del build-dependencies
+    linux-headers
+
