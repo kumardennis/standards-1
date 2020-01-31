@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "saref": {
+      "@id": "https://w3id.org/saref#",
+      "@prefix": true
+    },
+    "weather": {
+      "@id": "https://vocabulary.lifeengine.io/Weather#",
+      "@prefix": true
+    },
+    "humidity": {
+      "@id": "saref:Humidity"
+    },
+    "pressure": {
+      "@id": "saref:Pressure"
+    },
+    "rain": {
+      "@id": "weather:rain"
+    },
+    "temp": {
+      "@id": "saref:Temperature"
+    },
+    "windSpeed": {
+      "@id": "weather:windSpeed"
+    },
+    "windDirection": {
+      "@id": "weather:windDirection"
+    }
+  }
+}
