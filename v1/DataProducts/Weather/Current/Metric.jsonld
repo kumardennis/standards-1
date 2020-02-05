@@ -9,23 +9,11 @@
       "@id": "https://vocabulary.lifeengine.io/Weather#",
       "@prefix": true
     },
-    "humidity": {
-      "@id": "saref:Humidity"
-    },
-    "pressure": {
-      "@id": "saref:Pressure"
-    },
-    "rain": {
-      "@id": "weather:rain"
-    },
-    "temp": {
-      "@id": "saref:Temperature"
-    },
-    "windSpeed": {
-      "@id": "weather:windSpeed"
-    },
-    "windDirection": {
-      "@id": "weather:windDirection"
-    }
+    "humidity": "saref:Humidity",
+    "pressure": "saref:Pressure",
+    "rain": "weather:rain",
+    "temp": "saref:Temperature",
+    "windSpeed": "weather:windSpeed",
+    "windDirection": "weather:windDirection"
   }
 }
